@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		038B38FCF640FDAAAEF937AA1BEA8852 /* ELKitSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 17871CFD840901C59C3BB4A37798AF84 /* ELKitSDK-dummy.m */; };
-		1827D0ED7BA80BC4C4E5B6A32B695C69 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 66AF7167158BD3794CA217748CEF8E09 /* ReplaceMe.m */; };
 		1A039FC4E8ECBF168E2C2951127E6B6D /* ELKitSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 362DB8B51242E6320F0DBCD28D53A608 /* ELKitSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		371975807E6FC816DA7A54607FDB79AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		54F879EF96AC910FF908AC1720792B07 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		86ECF6C49F56091C82E3E98C814FFC24 /* Pods-ELKitSDK_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DF36D63014A07D9B3E72664161BBCE7 /* Pods-ELKitSDK_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8D361A7D97415A2263D43EAB93FC9BC9 /* Pods-ELKitSDK_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 418EBBE80BF76AC56D757352E93E2F89 /* Pods-ELKitSDK_Example-dummy.m */; };
 		903490ADBBB849682F52495FD459F640 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		BD0152DD2021DCD200725F5A /* UIView+ELExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = BD0152DB2021DCD200725F5A /* UIView+ELExtension.h */; };
+		BD0152DE2021DCD200725F5A /* UIView+ELExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = BD0152DC2021DCD200725F5A /* UIView+ELExtension.m */; };
 		C524394D7BEDBCE0447B2A6DCBCE34ED /* Pods-ELKitSDK_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2901616E2D03203112AE8FCC5A59FB0F /* Pods-ELKitSDK_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FCD369F97DB43EC5EB31F7B36516D895 /* Pods-ELKitSDK_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CD1E3EE1A0CCBC3B7A79FE1C49D77EF9 /* Pods-ELKitSDK_Tests-dummy.m */; };
 /* End PBXBuildFile section */
@@ -37,34 +38,35 @@
 		2901616E2D03203112AE8FCC5A59FB0F /* Pods-ELKitSDK_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ELKitSDK_Example-umbrella.h"; sourceTree = "<group>"; };
 		362DB8B51242E6320F0DBCD28D53A608 /* ELKitSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ELKitSDK-umbrella.h"; sourceTree = "<group>"; };
 		3C1E773F5965702BE3773E4E437DF01B /* Pods-ELKitSDK_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ELKitSDK_Example-frameworks.sh"; sourceTree = "<group>"; };
-		3C90B481EA15071EDD943B33E1BCF55E /* Pods_ELKitSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ELKitSDK_Tests.framework; path = "Pods-ELKitSDK_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3D4A4E3D2DA168CBECA90E68CB5E3519 /* ELKitSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ELKitSDK.framework; path = ELKitSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C90B481EA15071EDD943B33E1BCF55E /* Pods_ELKitSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ELKitSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D4A4E3D2DA168CBECA90E68CB5E3519 /* ELKitSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ELKitSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		418EBBE80BF76AC56D757352E93E2F89 /* Pods-ELKitSDK_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ELKitSDK_Example-dummy.m"; sourceTree = "<group>"; };
 		42526610237D8382DD2CBD6D9B2DB3B1 /* ELKitSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ELKitSDK-prefix.pch"; sourceTree = "<group>"; };
-		4EA6D6F2298B700C5399996D0459A7A6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		4EA6D6F2298B700C5399996D0459A7A6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		528DF1340359410F5852862FD2ED7731 /* Pods-ELKitSDK_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ELKitSDK_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		5EDA76B35CDD32A9C20F8AEA491BEFDB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		628AE44CA2DD66F8CA51AF9BAFDF6034 /* Pods-ELKitSDK_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ELKitSDK_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		6456F6CD2E76EA725815E6F99021AFF1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		66AF7167158BD3794CA217748CEF8E09 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = ELKitSDK/Classes/ReplaceMe.m; sourceTree = "<group>"; };
 		7F77576C117FC80A703D3C51D667CDCE /* Pods-ELKitSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ELKitSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		81D7326070980F05F4DDEA3C02B0F8C5 /* ELKitSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = ELKitSDK.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		81D7326070980F05F4DDEA3C02B0F8C5 /* ELKitSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = ELKitSDK.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		8DC88041B33085FDB54E5CA3C1BEAF52 /* Pods-ELKitSDK_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ELKitSDK_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		98FA79DC40A4F22BCC2340D0B92E0FD1 /* Pods-ELKitSDK_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ELKitSDK_Tests.modulemap"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		98FA79DC40A4F22BCC2340D0B92E0FD1 /* Pods-ELKitSDK_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ELKitSDK_Tests.modulemap"; sourceTree = "<group>"; };
 		AD5B6D24D8AEE495BC0DB4F19180264F /* Pods-ELKitSDK_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ELKitSDK_Tests-resources.sh"; sourceTree = "<group>"; };
-		B81A5F01B9B4F2D665EDEA60F121F887 /* ELKitSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ELKitSDK.modulemap; sourceTree = "<group>"; };
+		B81A5F01B9B4F2D665EDEA60F121F887 /* ELKitSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ELKitSDK.modulemap; sourceTree = "<group>"; };
 		B9B35F223CD15C102082CA58074D7692 /* Pods-ELKitSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ELKitSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		BD0152DB2021DCD200725F5A /* UIView+ELExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+ELExtension.h"; sourceTree = "<group>"; };
+		BD0152DC2021DCD200725F5A /* UIView+ELExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+ELExtension.m"; sourceTree = "<group>"; };
 		C133E5AA96C65F305717C714FB0F055D /* Pods-ELKitSDK_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ELKitSDK_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C3A8509C35EFBB6ED9F00F4E0F6A716B /* Pods_ELKitSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ELKitSDK_Example.framework; path = "Pods-ELKitSDK_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CA545FD913C369EA15B24CA248042367 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		C3A8509C35EFBB6ED9F00F4E0F6A716B /* Pods_ELKitSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ELKitSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA545FD913C369EA15B24CA248042367 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		CD1E3EE1A0CCBC3B7A79FE1C49D77EF9 /* Pods-ELKitSDK_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ELKitSDK_Tests-dummy.m"; sourceTree = "<group>"; };
 		DB5D37F13479590610DD3CED69E26356 /* Pods-ELKitSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ELKitSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		DE997D8E525646F542E84E9E697B7BDF /* Pods-ELKitSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ELKitSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
 		EC7A9516607AB28D57B12A4D7D972204 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F1C1B09497567B85F7215411C6879FDC /* ELKitSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ELKitSDK.xcconfig; sourceTree = "<group>"; };
-		F5F66BB41290AFAE165199D09B9B89EC /* Pods-ELKitSDK_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ELKitSDK_Example.modulemap"; sourceTree = "<group>"; };
+		F5F66BB41290AFAE165199D09B9B89EC /* Pods-ELKitSDK_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ELKitSDK_Example.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,7 +214,8 @@
 		EB41B9598815469A29299E0C060A35F0 /* ELKitSDK */ = {
 			isa = PBXGroup;
 			children = (
-				66AF7167158BD3794CA217748CEF8E09 /* ReplaceMe.m */,
+				BD0152DB2021DCD200725F5A /* UIView+ELExtension.h */,
+				BD0152DC2021DCD200725F5A /* UIView+ELExtension.m */,
 				D5C8EE910AF8201F66849B44C0496739 /* Pod */,
 				4628F27C2053E278AB7772651DA8E946 /* Support Files */,
 			);
@@ -243,6 +246,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD0152DD2021DCD200725F5A /* UIView+ELExtension.h in Headers */,
 				1A039FC4E8ECBF168E2C2951127E6B6D /* ELKitSDK-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,7 +356,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				038B38FCF640FDAAAEF937AA1BEA8852 /* ELKitSDK-dummy.m in Sources */,
-				1827D0ED7BA80BC4C4E5B6A32B695C69 /* ReplaceMe.m in Sources */,
+				BD0152DE2021DCD200725F5A /* UIView+ELExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
