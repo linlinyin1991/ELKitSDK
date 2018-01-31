@@ -3,7 +3,7 @@ This application makes use of the following third party libraries:
 
 ## ELKitSDK
 
-Copyright (c) 2018 yin linlin <linlin.yin@bkjk.com>
+Copyright (c) 2018 ElaineYin <linlinyin1991@163.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

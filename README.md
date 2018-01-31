@@ -1,6 +1,6 @@
 # ELKitSDK
 
-[![CI Status](http://img.shields.io/travis/yin linlin/ELKitSDK.svg?style=flat)](https://travis-ci.org/yin linlin/ELKitSDK)
+[![CI Status](http://img.shields.io/travis/ElaineYin/ELKitSDK.svg?style=flat)](https://travis-ci.org/ElaineYin/ELKitSDK)
 [![Version](https://img.shields.io/cocoapods/v/ELKitSDK.svg?style=flat)](http://cocoapods.org/pods/ELKitSDK)
 [![License](https://img.shields.io/cocoapods/l/ELKitSDK.svg?style=flat)](http://cocoapods.org/pods/ELKitSDK)
 [![Platform](https://img.shields.io/cocoapods/p/ELKitSDK.svg?style=flat)](http://cocoapods.org/pods/ELKitSDK)

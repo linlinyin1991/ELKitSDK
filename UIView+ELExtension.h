@@ -2,7 +2,7 @@
 //  UIView+ELExtension.h
 //  ELKitSDK
 //
-//  Created by yin linlin on 2018/1/31.
+//  Created by ElaineYin on 2018/1/31.
 //
 
 #import <UIKit/UIKit.h>
