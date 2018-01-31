@@ -22,7 +22,7 @@ pod 'ELKitSDK'
 
 ## Author
 
-yin linlin, linlin.yin@bkjk.com
+ElainYin, linlinyin1991@163.com
 
 ## License
 
