@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/yin linlin/ELKitSDK'
+  s.homepage         = 'https://github.com/linlinyin1991/ELKitSDK'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'yin linlin' => 'linlin.yin@bkjk.com' }
-  s.source           = { :git => 'https://github.com/yin linlin/ELKitSDK.git', :tag => s.version.to_s }
+  s.author           = { 'ElaineYin' => 'linlinyin1991@163.com' }
+  s.source           = { :git => 'https://github.com/linlinyin1991/ELKitSDK.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'

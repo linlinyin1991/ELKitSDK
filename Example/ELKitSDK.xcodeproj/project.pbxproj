@@ -61,12 +61,12 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8F24BAD5BF7A9D34BC0C565F /* Pods-ELKitSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ELKitSDK_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ELKitSDK_Example/Pods-ELKitSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
-		AB31523CD6972542A97B23C0 /* ELKitSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ELKitSDK.podspec; path = ../ELKitSDK.podspec; sourceTree = "<group>"; };
-		C0E9501D969CCC865F13462D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		AB31523CD6972542A97B23C0 /* ELKitSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ELKitSDK.podspec; path = ../ELKitSDK.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C0E9501D969CCC865F13462D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		D65E3A403ECC25574EF56132 /* Pods-ELKitSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ELKitSDK_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ELKitSDK_Example/Pods-ELKitSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		E1F8CA3902E7DE76B2241CA2 /* Pods-ELKitSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ELKitSDK_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ELKitSDK_Tests/Pods-ELKitSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		E35D73B26EE8FC7811152297 /* Pods_ELKitSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ELKitSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F99B6432B6059DDDF2F67357 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		F99B6432B6059DDDF2F67357 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */

@@ -1,0 +1,22 @@
+{
+  "name": "ELKitSDK",
+  "version": "0.1.0",
+  "summary": "A short description of ELKitSDK.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/yin linlin/ELKitSDK",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "yin linlin": "linlin.yin@bkjk.com"
+  },
+  "source": {
+    "git": "https://github.com/yin linlin/ELKitSDK.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "ELKitSDK/Classes/**/*"
+}

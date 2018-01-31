@@ -1,0 +1,6 @@
+framework module Pods_ELKitSDK_Example {
+  umbrella header "Pods-ELKitSDK_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
