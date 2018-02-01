@@ -25,12 +25,18 @@ TODO: 常用的SDK，方便之后创建新工程的时候使用.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'ElaineYin' => 'linlinyin1991@163.com' }
+  s.platform         = :ios, "8.0"
   s.source           = { :git => 'https://github.com/linlinyin1991/ELKitSDK.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'ELKitSDK/Classes/**/*'
+#  s.source_files = 'ELKitSDK/Classes/**/*'
+  s.requires_arc = true
+  
+  s.subspec 'ELViewCategory' do |ELViewCategory|
+      ELViewCategory.source_files = 'ELKitSDK/ELKitSDK/ELBaseModule/ELViewCategory/**/*.{h,m}'
+  end
   
   # s.resource_bundles = {
   #   'ELKitSDK' => ['ELKitSDK/Assets/*.png']
