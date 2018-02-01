@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ELKitSDK'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = '自己封装的常用SDK'
 
 # This description is used to generate tags and improve search results.
@@ -34,11 +34,11 @@ TODO: 常用的SDK，方便之后创建新工程的时候使用.
 #  s.source_files = 'ELKitSDK/Classes/**/*'
   s.requires_arc = true
   
-  s.subspec 'ELViewCategory' do |ELViewCategory|
-      ELViewCategory.source_files = 'ELKitSDK/ELKitSDK/ELBaseModule/ELViewCategory/**/*.{h,m}'
+  s.subspec 'ELViewCategory' do |ss|
+      ss.source_files = 'ELKitSDK/ELBaseModule/ELViewCategory/**/*.{h,m}'
   end
-  s.subspec 'ELDateModule' do |ELDateModule|
-      ELViewCategory.source_files = 'ELKitSDK/ELKitSDK/ELBaseModule/ELDateModule/**/*.{h,m}'
+  s.subspec 'ELDateModule' do |ss|
+      ss.source_files = 'ELKitSDK/ELBaseModule/ELDateModule/**/*.{h,m}'
   end
   # s.resource_bundles = {
   #   'ELKitSDK' => ['ELKitSDK/Assets/*.png']
