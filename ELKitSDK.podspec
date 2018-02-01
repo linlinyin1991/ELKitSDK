@@ -37,12 +37,15 @@ TODO: 常用的SDK，方便之后创建新工程的时候使用.
   s.subspec 'ELViewCategory' do |ELViewCategory|
       ELViewCategory.source_files = 'ELKitSDK/ELKitSDK/ELBaseModule/ELViewCategory/**/*.{h,m}'
   end
-  
+  s.subspec 'ELDateModule' do |ELDateModule|
+      ELViewCategory.source_files = 'ELKitSDK/ELKitSDK/ELBaseModule/ELDateModule/**/*.{h,m}'
+  end
   # s.resource_bundles = {
   #   'ELKitSDK' => ['ELKitSDK/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  s.frameworks = 'UIKit', 'MapKit'
+  
 end
