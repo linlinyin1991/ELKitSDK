@@ -14,6 +14,7 @@
 		86ECF6C49F56091C82E3E98C814FFC24 /* Pods-ELKitSDK_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DF36D63014A07D9B3E72664161BBCE7 /* Pods-ELKitSDK_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8D361A7D97415A2263D43EAB93FC9BC9 /* Pods-ELKitSDK_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 418EBBE80BF76AC56D757352E93E2F89 /* Pods-ELKitSDK_Example-dummy.m */; };
 		903490ADBBB849682F52495FD459F640 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		BD35B55C20240CBB00CD50EA /* ELBaseKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BD35B55B20240CBA00CD50EA /* ELBaseKit.h */; };
 		C524394D7BEDBCE0447B2A6DCBCE34ED /* Pods-ELKitSDK_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2901616E2D03203112AE8FCC5A59FB0F /* Pods-ELKitSDK_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FCD369F97DB43EC5EB31F7B36516D895 /* Pods-ELKitSDK_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CD1E3EE1A0CCBC3B7A79FE1C49D77EF9 /* Pods-ELKitSDK_Tests-dummy.m */; };
 /* End PBXBuildFile section */
@@ -54,7 +55,9 @@
 		AD5B6D24D8AEE495BC0DB4F19180264F /* Pods-ELKitSDK_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ELKitSDK_Tests-resources.sh"; sourceTree = "<group>"; };
 		B81A5F01B9B4F2D665EDEA60F121F887 /* ELKitSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ELKitSDK.modulemap; sourceTree = "<group>"; };
 		B9B35F223CD15C102082CA58074D7692 /* Pods-ELKitSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ELKitSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		BD07035E2022B7D60016578F /* ELBaseModule */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ELBaseModule; path = ELKitSDK/ELBaseModule; sourceTree = "<group>"; };
+		BD35B555202406B500CD50EA /* ELDateModule */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ELDateModule; path = ELKitSDK/ELDateModule; sourceTree = "<group>"; };
+		BD35B556202406B500CD50EA /* ELViewCategory */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ELViewCategory; path = ELKitSDK/ELViewCategory; sourceTree = "<group>"; };
+		BD35B55B20240CBA00CD50EA /* ELBaseKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ELBaseKit.h; path = ELKitSDK/ELBaseKit.h; sourceTree = "<group>"; };
 		C133E5AA96C65F305717C714FB0F055D /* Pods-ELKitSDK_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ELKitSDK_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		C3A8509C35EFBB6ED9F00F4E0F6A716B /* Pods_ELKitSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ELKitSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA545FD913C369EA15B24CA248042367 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -211,7 +214,9 @@
 		EB41B9598815469A29299E0C060A35F0 /* ELKitSDK */ = {
 			isa = PBXGroup;
 			children = (
-				BD07035E2022B7D60016578F /* ELBaseModule */,
+				BD35B55B20240CBA00CD50EA /* ELBaseKit.h */,
+				BD35B555202406B500CD50EA /* ELDateModule */,
+				BD35B556202406B500CD50EA /* ELViewCategory */,
 				D5C8EE910AF8201F66849B44C0496739 /* Pod */,
 				4628F27C2053E278AB7772651DA8E946 /* Support Files */,
 			);
@@ -243,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A039FC4E8ECBF168E2C2951127E6B6D /* ELKitSDK-umbrella.h in Headers */,
+				BD35B55C20240CBB00CD50EA /* ELBaseKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
