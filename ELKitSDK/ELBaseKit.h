@@ -10,6 +10,8 @@
 
 #import "NSDate+ELExtension.h"
 #import "UIView+ELExtension.h"
-#import "ELTextInput.h"
+#import "ELTextView.h"
+#import "ELTextField.h"
+
 
 #endif /* ELBaseKit_h */
