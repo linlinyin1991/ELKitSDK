@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'ELKitSDK'
-  s.version          = '0.1.2'
+  s.version          = '0.1.5'
   s.summary          = '自己封装的常用SDK'
   s.description      = <<-DESC
 TODO: 常用的SDK，方便之后创建新工程的时候使用.
@@ -14,18 +14,19 @@ TODO: 常用的SDK，方便之后创建新工程的时候使用.
 
   s.ios.deployment_target = '8.0'
   s.public_header_files = 'ELKitSDK/ELBaseKit.h'
-  s.source_files = 'ELKitSDK/**/*'
+  s.source_files = 'ELKitSDK/ELBaseKit.h'
   s.requires_arc = true
   s.subspec 'ELViewCategory' do |ss|
-      ss.source_files = 'ELKitSDK/ELViewCategory/**/*'
-      ss.public_header_files = 'ELKitSDK/ELViewCategory/UIView+ELExtension.h'
+      ss.source_files = 'ELKitSDK/UIView+ELExtension.{h,m}'
+      ss.public_header_files = 'ELKitSDK/UIView+ELExtension.h'
   end
   s.subspec 'ELDateModule' do |ss|
-      ss.source_files = 'ELKitSDK/ELDateModule/**/*'
-      ss.public_header_files = 'ELKitSDK/ELDateModule/NSDate+ELExtension.h'
+      ss.source_files = 'ELKitSDK/NSDate+ELExtension.{h,m}'
+      ss.public_header_files = 'ELKitSDK/NSDate+ELExtension.h'
   end
   s.subspec 'ELTextInput' do |ss|
-      ss.source_files = 'ELKitSDK/ELTextInput/**/*'
+      ss.source_files = 'ELKitSDK/ELText{Input,View,Field}.{h,m}'
+      ss.public_header_files = 'ELKitSDK/ELTextInput.h'
       ss.dependency 'ELKitSDK/ELViewCategory'
   end
   s.frameworks = 'UIKit', 'MapKit'
