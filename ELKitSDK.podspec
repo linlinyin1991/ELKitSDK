@@ -24,7 +24,7 @@ TODO: 常用的SDK，方便之后创建新工程的时候使用.
       ss.source_files = 'ELKitSDK/NSDate+ELExtension.{h,m}'
       ss.public_header_files = 'ELKitSDK/NSDate+ELExtension.h'
   end
-  s.subspec 'ELTextInput' do |ss|
+  s.subspec 'ELViewInput' do |ss|
       ss.source_files = 'ELKitSDK/{ELTextInput.h,ELText{View,Field}.{h,m}}'
       ss.public_header_files = 'ELKitSDK/ELTextInput.h'
       ss.dependency 'ELKitSDK/ELViewCategory'
