@@ -2,7 +2,7 @@
 //  NSDate+ELExtension.m
 //  YLSDKProduct
 //
-//  Created by yin linlin on 2018/2/1.
+//  Created by ElaineYin on 2018/2/1.
 //  Copyright © 2018年 yin linlin. All rights reserved.
 //
 
@@ -24,7 +24,7 @@
 
 #pragma mark - NSDateFormatter
 
-@implementation NSDateFormatter (PPExtension)
+@implementation NSDateFormatter (ELExtension)
 
 static NSDateFormatter * formatter = nil;
 +(nullable NSDateFormatter *)sharedInstance {
@@ -107,7 +107,76 @@ static NSCalendar * calendar = nil;
     return [ELCalendar components:unitFlags fromDate:self];
 }
 
+@end
 
+@implementation NSDate (ELCalculate)
+
+#pragma mark - **********获取新日期**********
+-(NSDate *)el_dateByYears:(NSInteger)years {
+    NSDateComponents * component = [[NSDateComponents alloc] init];
+    component.year = years;
+    return [ELCalendar dateByAddingComponents:component toDate:self options:0];
+}
+-(NSDate *)el_dateByMonths:(NSInteger)months {
+    NSDateComponents * component = [[NSDateComponents alloc] init];
+    component.month = months;
+    return [ELCalendar dateByAddingComponents:component toDate:self options:0];
+}
+-(NSDate *)el_dateByWeeks:(NSInteger)weeks {
+    NSDateComponents * component = [[NSDateComponents alloc] init];
+    component.weekOfYear = weeks;
+    return [ELCalendar dateByAddingComponents:component toDate:self options:0];
+}
+-(NSDate *)el_dateByDays:(NSInteger)days {
+    NSDateComponents * component = [[NSDateComponents alloc] init];
+    component.day = days;
+    return [ELCalendar dateByAddingComponents:component toDate:self options:0];
+}
+-(NSDate *)el_dateByHours:(NSInteger)hours {
+    NSDateComponents * component = [[NSDateComponents alloc] init];
+    component.hour = hours;
+    return [ELCalendar dateByAddingComponents:component toDate:self options:0];
+}
+-(NSDate *)el_dateByMinute:(NSInteger)minutes {
+    NSDateComponents * component = [[NSDateComponents alloc] init];
+    component.minute = minutes;
+    return [ELCalendar dateByAddingComponents:component toDate:self options:0];
+}
+-(NSDate *)el_dateBySecond:(NSInteger)seconds {
+    NSDateComponents * component = [[NSDateComponents alloc] init];
+    component.second = seconds;
+    return [ELCalendar dateByAddingComponents:component toDate:self options:0];
+}
+
+#pragma mark - **********获取日期差值**********
+-(NSInteger)el_yearsByDate:(NSDate *)date {
+    if (!date) {return NSIntegerMin;}
+    return [ELCalendar components:NSCalendarUnitYear fromDate:date toDate:self options:0].year;
+}
+-(NSInteger)el_monthsByDate:(NSDate *)date {
+    if (!date) {return NSIntegerMin;}
+    return [ELCalendar components:NSCalendarUnitMonth fromDate:date toDate:self options:0].month;
+}
+-(NSInteger)el_weeksByDate:(NSDate *)date {
+    if (!date) {return NSIntegerMin;}
+    return [ELCalendar components:NSCalendarUnitWeekOfYear fromDate:date toDate:self options:0].weekOfYear;
+}
+-(NSInteger)el_daysByDate:(NSDate *)date {
+    if (!date) {return NSIntegerMin;}
+    return [ELCalendar components:NSCalendarUnitDay fromDate:date toDate:self options:0].day;
+}
+-(NSInteger)el_hoursByDate:(NSDate *)date {
+    if (!date) {return NSIntegerMin;}
+    return [ELCalendar components:NSCalendarUnitHour fromDate:date toDate:self options:0].hour;
+}
+-(NSInteger)el_minutesByDate:(NSDate *)date {
+    if (!date) {return NSIntegerMin;}
+    return [ELCalendar components:NSCalendarUnitMinute fromDate:date toDate:self options:0].minute;
+}
+-(NSInteger)el_secondsByDate:(NSDate *)date {
+    if (!date) {return NSIntegerMin;}
+    return [ELCalendar components:NSCalendarUnitSecond fromDate:date toDate:self options:0].second;
+}
 
 
 @end
