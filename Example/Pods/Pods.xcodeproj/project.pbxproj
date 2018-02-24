@@ -28,7 +28,7 @@
 		BD0282CD204137FF008103DB /* ELTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = BD0282C0204137FF008103DB /* ELTextView.h */; };
 		BD0282CE204137FF008103DB /* ELTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = BD0282C1204137FF008103DB /* ELTextField.m */; };
 		BD0282CF204137FF008103DB /* NSString+ELExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = BD0282C2204137FF008103DB /* NSString+ELExtension.m */; };
-		BD0282D120413841008103DB /* ELCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = BD0282D020413841008103DB /* ELCategory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD0282D120413841008103DB /* ELCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = BD0282D020413841008103DB /* ELCategory.h */; };
 		C524394D7BEDBCE0447B2A6DCBCE34ED /* Pods-ELKitSDK_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2901616E2D03203112AE8FCC5A59FB0F /* Pods-ELKitSDK_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E6601214F628B9FB9C973E45CE3C9F3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 		FCD369F97DB43EC5EB31F7B36516D895 /* Pods-ELKitSDK_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CD1E3EE1A0CCBC3B7A79FE1C49D77EF9 /* Pods-ELKitSDK_Tests-dummy.m */; };

@@ -39,7 +39,7 @@ TODO: 常用的SDK，方便之后创建新工程的时候使用.
       ss.public_header_files = 'ELKitSDK/NSDate+ELExtension.h'
   end
   s.subspec 'ELCategory' do |ss|
+      ss.source_files = 'ELKitSDK/{UIView,NSDate,UIColor,NSString}+ELExtension.{h,m}','ELCategory.h'
       ss.public_header_files = 'ELKitSDK/ELCategory.h'
-      ss.source_files = 'ELKitSDK/{UIView,NSDate,UIColor,NSString}+ELExtension.{h,m}'
   end
 end
