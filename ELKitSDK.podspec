@@ -26,4 +26,20 @@ TODO: 常用的SDK，方便之后创建新工程的时候使用.
       ss.public_header_files = 'ELKitSDK/ELText{View,Field}.h'
       ss.dependency 'ELKitSDK/ELViewCategory'
   end
+  s.subspec 'Color' do |ss|
+      ss.source_files = 'ELKitSDK/UIColor+ELExtension.{h,m}'
+      ss.public_header_files = 'ELKitSDK/UIColor+ELExtension.h'
+  end
+  s.subspec 'String' do |ss|
+      ss.source_files = 'ELKitSDK/NSString+ELExtension.{h,m}'
+      ss.public_header_files = 'ELKitSDK/NSString+ELExtension.h'
+  end
+  s.subspec 'ELViewCategory' do |ss|
+      ss.source_files = 'ELKitSDK/UIView+ELExtension.{h,m}'
+      ss.public_header_files = 'ELKitSDK/UIView+ELExtension.h'
+  end
+  s.subspec 'ELDateModule' do |ss|
+      ss.source_files = 'ELKitSDK/NSDate+ELExtension.{h,m}'
+      ss.public_header_files = 'ELKitSDK/NSDate+ELExtension.h'
+  end
 end
