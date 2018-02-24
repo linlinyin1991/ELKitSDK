@@ -17,10 +17,6 @@ TODO: 常用的SDK，方便之后创建新工程的时候使用.
   s.source_files = 'ELKitSDK/ELBaseKit.h'
   s.requires_arc = true
   s.frameworks = 'UIKit'
-  s.subspec 'ELCategory' do |ss|
-      ss.source_files = 'ELKitSDK/{UIView,NSDate,UIColor,NSString}+ELExtension.{h,m}'
-      ss.public_header_files = 'ELKitSDK/ELCategory.h'
-  end
   s.subspec 'ELViewInput' do |ss|
       ss.source_files = 'ELKitSDK/ELText{View,Field}.{h,m}'
       ss.public_header_files = 'ELKitSDK/ELText{View,Field}.h'
@@ -41,5 +37,9 @@ TODO: 常用的SDK，方便之后创建新工程的时候使用.
   s.subspec 'ELDateModule' do |ss|
       ss.source_files = 'ELKitSDK/NSDate+ELExtension.{h,m}'
       ss.public_header_files = 'ELKitSDK/NSDate+ELExtension.h'
+  end
+  s.subspec 'ELCategory' do |ss|
+      ss.public_header_files = 'ELKitSDK/ELCategory.h'
+      ss.source_files = 'ELKitSDK/{UIView,NSDate,UIColor,NSString}+ELExtension.{h,m}'
   end
 end
