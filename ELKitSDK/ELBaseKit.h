@@ -2,7 +2,7 @@
 //  ELBaseKit.h
 //  ELKitSDK
 //
-//  Created by yin linlin on 2018/2/2.
+//  Created by ElaineYin on 2018/2/2.
 //
 
 #ifndef ELBaseKit_h
@@ -10,6 +10,8 @@
 
 #import "NSDate+ELExtension.h"
 #import "UIView+ELExtension.h"
-#import "ELTextInput.h"
-
+#import "ELTextView.h"
+#import "ELTextField.h"
+#import "UIColor+ELExtension.h"
+#import "NSString+ELExtension.h"
 #endif /* ELBaseKit_h */

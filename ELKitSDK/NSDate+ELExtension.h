@@ -2,7 +2,7 @@
 //  NSDate+ELExtension.h
 //  YLSDKProduct
 //
-//  Created by yin linlin on 2018/2/1.
+//  Created by ElaineYin on 2018/2/1.
 //  Copyright © 2018年 yin linlin. All rights reserved.
 //
 
@@ -42,7 +42,26 @@
 
 @end
 
+@interface NSDate (ELCalculate)
 
+#pragma mark - **********获取新日期**********
+-(nullable NSDate *)el_dateByYears:(NSInteger)years;     /*@return (+-years)年的日期*/
+-(nullable NSDate *)el_dateByMonths:(NSInteger)months;   /*@return (+-months)月的日期*/
+-(nullable NSDate *)el_dateByWeeks:(NSInteger)weeks;     /*@return (+-weeks)周的日期*/
+-(nullable NSDate *)el_dateByDays:(NSInteger)days;       /*@return (+-days)天的日期*/
+-(nullable NSDate *)el_dateByHours:(NSInteger)hours;     /*@return (+-hours)小时的日期*/
+-(nullable NSDate *)el_dateByMinute:(NSInteger)minutes;  /*@return (+-minutes)分钟的日期*/
+-(nullable NSDate *)el_dateBySecond:(NSInteger)seconds;  /*@return (+-seconds)秒的日期*/
+#pragma mark - **********获取日期差值**********
+-(NSInteger)el_yearsByDate:(nonnull NSDate *)date;      /*@return 与date相差年数,只返回整数差值*/
+-(NSInteger)el_monthsByDate:(nonnull NSDate *)date;     /*@return 与date相差月数,只返回整数差值*/
+-(NSInteger)el_weeksByDate:(nonnull NSDate *)date;      /*@return 与date相差周数,只返回整数差值*/
+-(NSInteger)el_daysByDate:(nonnull NSDate *)date;       /*@return 与date相差天数,只返回整数差值*/
+-(NSInteger)el_hoursByDate:(nonnull NSDate *)date;      /*@return 与date相差小时数,只返回整数差值*/
+-(NSInteger)el_minutesByDate:(nonnull NSDate *)date;    /*@return 与date相差分钟数,只返回整数差值*/
+-(NSInteger)el_secondsByDate:(nonnull NSDate *)date;    /*@return 与date相差秒数,只返回整数差值*/
+
+@end
 
 #pragma mark - NSCalendar
 @interface NSCalendar (ELExtension)

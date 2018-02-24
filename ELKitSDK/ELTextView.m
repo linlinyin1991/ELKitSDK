@@ -2,7 +2,7 @@
 //  ELTextView.m
 //  ELKitSDK
 //
-//  Created by yin linlin on 2018/2/5.
+//  Created by ElaineYin on 2018/2/5.
 //
 
 #import "ELTextView.h"

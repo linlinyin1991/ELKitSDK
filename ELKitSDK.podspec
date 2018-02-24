@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'ELKitSDK'
-  s.version          = '0.1.6'
+  s.version          = '0.2.1'
   s.summary          = '自己封装的常用SDK'
   s.description      = <<-DESC
 TODO: 常用的SDK，方便之后创建新工程的时候使用.
@@ -16,6 +16,8 @@ TODO: 常用的SDK，方便之后创建新工程的时候使用.
   s.public_header_files = 'ELKitSDK/ELBaseKit.h'
   s.source_files = 'ELKitSDK/ELBaseKit.h'
   s.requires_arc = true
+  s.frameworks = 'UIKit'
+  
   s.subspec 'ELViewCategory' do |ss|
       ss.source_files = 'ELKitSDK/UIView+ELExtension.{h,m}'
       ss.public_header_files = 'ELKitSDK/UIView+ELExtension.h'
@@ -25,10 +27,16 @@ TODO: 常用的SDK，方便之后创建新工程的时候使用.
       ss.public_header_files = 'ELKitSDK/NSDate+ELExtension.h'
   end
   s.subspec 'ELViewInput' do |ss|
-      ss.source_files = 'ELKitSDK/{ELTextInput.h,ELText{View,Field}.{h,m}}'
-      ss.public_header_files = 'ELKitSDK/ELTextInput.h'
+      ss.source_files = 'ELKitSDK/ELText{View,Field}.{h,m}'
+      ss.public_header_files = 'ELKitSDK/ELText{View,Field}.h'
       ss.dependency 'ELKitSDK/ELViewCategory'
   end
-  s.frameworks = 'UIKit', 'MapKit'
-  
+  s.subspec 'Color' do |ss|
+      ss.source_files = 'ELKitSDK/UIColor+ELExtension.{h,m}'
+      ss.public_header_files = 'ELKitSDK/UIColor+ELExtension.h'
+  end
+  s.subspec 'String' do |ss|
+      ss.source_files = 'ELKitSDK/NSString+ELExtension.{h,m}'
+      ss.public_header_files = 'ELKitSDK/NSString+ELExtension.h'
+  end
 end
