@@ -28,7 +28,6 @@
 		BD0282CD204137FF008103DB /* ELTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = BD0282C0204137FF008103DB /* ELTextView.h */; };
 		BD0282CE204137FF008103DB /* ELTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = BD0282C1204137FF008103DB /* ELTextField.m */; };
 		BD0282CF204137FF008103DB /* NSString+ELExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = BD0282C2204137FF008103DB /* NSString+ELExtension.m */; };
-		BD0282D120413841008103DB /* ELCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = BD0282D020413841008103DB /* ELCategory.h */; };
 		C524394D7BEDBCE0447B2A6DCBCE34ED /* Pods-ELKitSDK_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2901616E2D03203112AE8FCC5A59FB0F /* Pods-ELKitSDK_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E6601214F628B9FB9C973E45CE3C9F3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 		FCD369F97DB43EC5EB31F7B36516D895 /* Pods-ELKitSDK_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CD1E3EE1A0CCBC3B7A79FE1C49D77EF9 /* Pods-ELKitSDK_Tests-dummy.m */; };
@@ -86,7 +85,6 @@
 		BD0282C0204137FF008103DB /* ELTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ELTextView.h; path = ELKitSDK/ELTextView.h; sourceTree = "<group>"; };
 		BD0282C1204137FF008103DB /* ELTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ELTextField.m; path = ELKitSDK/ELTextField.m; sourceTree = "<group>"; };
 		BD0282C2204137FF008103DB /* NSString+ELExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+ELExtension.m"; path = "ELKitSDK/NSString+ELExtension.m"; sourceTree = "<group>"; };
-		BD0282D020413841008103DB /* ELCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ELCategory.h; path = ELKitSDK/ELCategory.h; sourceTree = "<group>"; };
 		C133E5AA96C65F305717C714FB0F055D /* Pods-ELKitSDK_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ELKitSDK_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		C3A8509C35EFBB6ED9F00F4E0F6A716B /* Pods_ELKitSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ELKitSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD1E3EE1A0CCBC3B7A79FE1C49D77EF9 /* Pods-ELKitSDK_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ELKitSDK_Tests-dummy.m"; sourceTree = "<group>"; };
@@ -235,7 +233,6 @@
 			isa = PBXGroup;
 			children = (
 				9A9206CCF7A875D4F38ECA2E649267C6 /* ELBaseKit.h */,
-				BD0282D020413841008103DB /* ELCategory.h */,
 				BD0282B6204137FE008103DB /* ELTextField.h */,
 				BD0282C1204137FF008103DB /* ELTextField.m */,
 				BD0282BD204137FF008103DB /* ELTextInput.h */,
@@ -296,7 +293,6 @@
 				BD0282C3204137FF008103DB /* ELTextField.h in Headers */,
 				BD0282CD204137FF008103DB /* ELTextView.h in Headers */,
 				BD0282C6204137FF008103DB /* UIColor+ELExtension.h in Headers */,
-				BD0282D120413841008103DB /* ELCategory.h in Headers */,
 				9D0334003811B03D033FF535C45F4102 /* ELBaseKit.h in Headers */,
 				B844AC13A8155CE084C66ECC8D78F797 /* ELKitSDK-umbrella.h in Headers */,
 			);
