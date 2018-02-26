@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'ELKitSDK'
-  s.version          = '0.2.3'
+  s.version          = '0.2.4'
   s.summary          = '自己封装的常用SDK'
   s.description      = <<-DESC
 TODO: 常用的SDK，方便之后创建新工程的时候使用.
@@ -21,22 +21,6 @@ TODO: 常用的SDK，方便之后创建新工程的时候使用.
       ss.source_files = 'ELKitSDK/ELText{View,Field}.{h,m}'
       ss.public_header_files = 'ELKitSDK/ELText{View,Field}.h'
       ss.dependency 'ELKitSDK/ELViewCategory'
-  end
-  s.subspec 'ELColor' do |ss|
-      ss.source_files = 'ELKitSDK/UIColor+ELExtension.{h,m}'
-      ss.public_header_files = 'ELKitSDK/UIColor+ELExtension.h'
-  end
-  s.subspec 'ELString' do |ss|
-      ss.source_files = 'ELKitSDK/NSString+ELExtension.{h,m}'
-      ss.public_header_files = 'ELKitSDK/NSString+ELExtension.h'
-  end
-  s.subspec 'ELViewCategory' do |ss|
-      ss.source_files = 'ELKitSDK/UIView+ELExtension.{h,m}'
-      ss.public_header_files = 'ELKitSDK/UIView+ELExtension.h'
-  end
-  s.subspec 'ELDateModule' do |ss|
-      ss.source_files = 'ELKitSDK/NSDate+ELExtension.{h,m}'
-      ss.public_header_files = 'ELKitSDK/NSDate+ELExtension.h'
   end
   s.subspec 'ELCategory' do |ss|
       ss.source_files = 'ELKitSDK/{UIView,NSDate,UIColor,NSString}+ELExtension.{h,m}','ELKitSDK/ELCategory.h'
