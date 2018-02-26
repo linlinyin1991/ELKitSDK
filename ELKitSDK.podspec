@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'ELKitSDK'
-  s.version          = '0.2.4'
+  s.version          = '0.2.2'
   s.summary          = '自己封装的常用SDK'
   s.description      = <<-DESC
 TODO: 常用的SDK，方便之后创建新工程的时候使用.
