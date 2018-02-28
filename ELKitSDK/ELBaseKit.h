@@ -14,4 +14,5 @@
 #import "ELTextField.h"
 #import "UIColor+ELExtension.h"
 #import "NSString+ELExtension.h"
+#import "ELDeviceUtility.h"
 #endif /* ELBaseKit_h */

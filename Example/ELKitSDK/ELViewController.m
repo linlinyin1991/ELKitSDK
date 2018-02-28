@@ -7,6 +7,7 @@
 //
 
 #import "ELViewController.h"
+#import <ELKitSDK/ELDeviceUtility.h>
 
 @interface ELViewController ()
 
