@@ -13,7 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 //转Data
 @property(nullable, readonly, copy) NSData   *el_utf8Data;
-
+/*base64解密*/
+- (NSData *)el_base64DecodeData;
 /*base64加密字符串*/
 @property(nullable, readonly, copy) NSString *el_base64Encode;
 /*base64解密字符串*/

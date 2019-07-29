@@ -13,13 +13,16 @@
     return [self dataUsingEncoding:NSUTF8StringEncoding];
 }
 
+- (NSData *)el_base64DecodeData {
+    return [[NSData alloc] initWithBase64EncodedString:self options:NSDataBase64DecodingIgnoreUnknownCharacters];
+}
+
 - (NSString *)el_base64Encode {
     return [self.el_utf8Data base64EncodedStringWithOptions:0];
 }
 
 - (NSString *)el_base64Decode {
-    NSData *decodedData = [[NSData alloc] initWithBase64EncodedString:self options:0];
-    return decodedData.el_utf8String;
+    return self.el_base64DecodeData.el_utf8String;
 }
 
 - (NSString *)el_urlEncode {

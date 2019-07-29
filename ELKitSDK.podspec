@@ -20,14 +20,17 @@ TODO: 常用的SDK，方便之后创建新工程的时候使用.
   s.subspec 'ELCategory' do |ss|
       ss.source_files = 'ELKitSDK/Classes/ELCategory'
   end
-  s.subspec 'EYInputView' do |ss|
-      ss.source_files = 'ELKitSDK/Classes/EYInputView'
+  s.subspec 'ELInputView' do |ss|
+      ss.source_files = 'ELKitSDK/Classes/ELInputView'
   end
-  s.subspec 'EYUtils' do |ss|
-      ss.source_files = 'ELKitSDK/Classes/EYUtils'
+  s.subspec 'ELUtils' do |ss|
+      ss.source_files = 'ELKitSDK/Classes/ELUtils'
   end
-  s.subspec 'EYRegular' do |ss|
-      ss.source_files = 'ELKitSDK/Classes/EYRegular'
+  s.subspec 'ELRegular' do |ss|
+      ss.source_files = 'ELKitSDK/Classes/ELRegular'
+  end
+  s.subspec 'ELEncrypt' do |ss|
+    ss.source_files = 'ELKitSDK/Classes/ELEncrypt'
   end
   
 end

@@ -28,16 +28,20 @@
       "source_files": "ELKitSDK/Classes/ELCategory"
     },
     {
-      "name": "EYInputView",
-      "source_files": "ELKitSDK/Classes/EYInputView"
+      "name": "ELInputView",
+      "source_files": "ELKitSDK/Classes/ELInputView"
     },
     {
-      "name": "EYUtils",
-      "source_files": "ELKitSDK/Classes/EYUtils"
+      "name": "ELUtils",
+      "source_files": "ELKitSDK/Classes/ELUtils"
     },
     {
-      "name": "EYRegular",
-      "source_files": "ELKitSDK/Classes/EYRegular"
+      "name": "ELRegular",
+      "source_files": "ELKitSDK/Classes/ELRegular"
+    },
+    {
+      "name": "ELEncrypt",
+      "source_files": "ELKitSDK/Classes/ELEncrypt"
     }
   ]
 }

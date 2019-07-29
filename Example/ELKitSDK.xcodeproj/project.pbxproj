@@ -24,6 +24,8 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		909C6319633EB0460D850A80 /* Pods_ELKitSDK_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E35D73B26EE8FC7811152297 /* Pods_ELKitSDK_Example.framework */; };
+		BD19A7EE22EEDD960096FC45 /* ELEncryptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD19A7EC22EEDD960096FC45 /* ELEncryptViewController.m */; };
+		BD19A7EF22EEDD960096FC45 /* ELEncryptViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD19A7ED22EEDD960096FC45 /* ELEncryptViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,9 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8F24BAD5BF7A9D34BC0C565F /* Pods-ELKitSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ELKitSDK_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ELKitSDK_Example/Pods-ELKitSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
 		AB31523CD6972542A97B23C0 /* ELKitSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ELKitSDK.podspec; path = ../ELKitSDK.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BD19A7EB22EEDD960096FC45 /* ELEncryptViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELEncryptViewController.h; sourceTree = "<group>"; };
+		BD19A7EC22EEDD960096FC45 /* ELEncryptViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELEncryptViewController.m; sourceTree = "<group>"; };
+		BD19A7ED22EEDD960096FC45 /* ELEncryptViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ELEncryptViewController.xib; sourceTree = "<group>"; };
 		C0E9501D969CCC865F13462D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		D65E3A403ECC25574EF56132 /* Pods-ELKitSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ELKitSDK_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ELKitSDK_Example/Pods-ELKitSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		E1F8CA3902E7DE76B2241CA2 /* Pods-ELKitSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ELKitSDK_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ELKitSDK_Tests/Pods-ELKitSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -137,6 +142,9 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* ELViewController.h */,
 				6003F5A6195388D20070C39A /* ELViewController.m */,
+				BD19A7EB22EEDD960096FC45 /* ELEncryptViewController.h */,
+				BD19A7EC22EEDD960096FC45 /* ELEncryptViewController.m */,
+				BD19A7ED22EEDD960096FC45 /* ELEncryptViewController.xib */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -257,6 +265,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -278,6 +287,7 @@
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
+				BD19A7EF22EEDD960096FC45 /* ELEncryptViewController.xib in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
@@ -356,6 +366,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* ELAppDelegate.m in Sources */,
+				BD19A7EE22EEDD960096FC45 /* ELEncryptViewController.m in Sources */,
 				6003F5A7195388D20070C39A /* ELViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
@@ -510,6 +521,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ELKitSDK/ELKitSDK-Prefix.pch";
 				INFOPLIST_FILE = "ELKitSDK/ELKitSDK-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -526,6 +538,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ELKitSDK/ELKitSDK-Prefix.pch";
 				INFOPLIST_FILE = "ELKitSDK/ELKitSDK-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";

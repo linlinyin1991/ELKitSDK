@@ -1,13 +1,15 @@
 PODS:
   - ELKitSDK (0.2.3):
     - ELKitSDK/ELCategory (= 0.2.3)
-    - ELKitSDK/EYInputView (= 0.2.3)
-    - ELKitSDK/EYRegular (= 0.2.3)
-    - ELKitSDK/EYUtils (= 0.2.3)
+    - ELKitSDK/ELEncrypt (= 0.2.3)
+    - ELKitSDK/ELInputView (= 0.2.3)
+    - ELKitSDK/ELRegular (= 0.2.3)
+    - ELKitSDK/ELUtils (= 0.2.3)
   - ELKitSDK/ELCategory (0.2.3)
-  - ELKitSDK/EYInputView (0.2.3)
-  - ELKitSDK/EYRegular (0.2.3)
-  - ELKitSDK/EYUtils (0.2.3)
+  - ELKitSDK/ELEncrypt (0.2.3)
+  - ELKitSDK/ELInputView (0.2.3)
+  - ELKitSDK/ELRegular (0.2.3)
+  - ELKitSDK/ELUtils (0.2.3)
 
 DEPENDENCIES:
   - ELKitSDK (from `../`)
@@ -17,7 +19,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ELKitSDK: d9f7246edd029a9e83389389f919807be86425ed
+  ELKitSDK: 0d36a30fd318871ee7ee29965001bd0d309700c4
 
 PODFILE CHECKSUM: 7a5067db3d636ea19ee7b8a0a6604653b1bf92ff
 

@@ -14,7 +14,7 @@
 #define kScreenHeight          [UIScreen mainScreen].bounds.size.height
 
 //状态栏高度
-#define kStatusHeight          CGRectGetHeight([UIAKlication sharedApplication].statusBarFrame)
+#define kStatusHeight          CGRectGetHeight([UIApplication sharedApplication].statusBarFrame)
 
 //导航栏高度
 #define kNavigationBarHeight   44
