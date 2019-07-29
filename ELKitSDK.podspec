@@ -18,13 +18,16 @@ TODO: 常用的SDK，方便之后创建新工程的时候使用.
   s.requires_arc = true
   s.frameworks = 'UIKit'
   s.subspec 'ELCategory' do |ss|
-      ss.source_files = 'ELKitSDK/{UIView,NSDate,UIColor,NSString}+ELExtension.{h,m}'
+      ss.source_files = 'ELKitSDK/Classes/ELCategory'
   end
-  s.subspec 'ELViewInput' do |ss|
-      ss.source_files = 'ELKitSDK/ELText{View,Field}.{h,m}','ELKitSDK/UIView+ELExtension.{h,m}'
+  s.subspec 'EYInputView' do |ss|
+      ss.source_files = 'ELKitSDK/Classes/EYInputView'
   end
-  s.subspec 'ELUtility' do |ss|
-      ss.source_files = 'ELKitSDK/ELDeviceUtility.h'
+  s.subspec 'EYUtils' do |ss|
+      ss.source_files = 'ELKitSDK/Classes/EYUtils'
+  end
+  s.subspec 'EYRegular' do |ss|
+      ss.source_files = 'ELKitSDK/Classes/EYRegular'
   end
   
 end

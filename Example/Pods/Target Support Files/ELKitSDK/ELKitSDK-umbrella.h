@@ -10,18 +10,15 @@
 #endif
 #endif
 
-#import "ELBaseKit.h"
 #import "NSDate+ELExtension.h"
 #import "NSString+ELExtension.h"
 #import "UIColor+ELExtension.h"
-#import "UIView+ELExtension.h"
-#import "UIColor+ELExtension.h"
-#import "NSDate+ELExtension.h"
-#import "NSString+ELExtension.h"
-#import "ELDeviceUtility.h"
 #import "UIView+ELExtension.h"
 #import "ELTextField.h"
+#import "ELTextInput.h"
 #import "ELTextView.h"
+#import "ELRegular.h"
+#import "ELDeviceUtility.h"
 
 FOUNDATION_EXPORT double ELKitSDKVersionNumber;
 FOUNDATION_EXPORT const unsigned char ELKitSDKVersionString[];

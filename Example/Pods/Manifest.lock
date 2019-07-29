@@ -1,31 +1,24 @@
 PODS:
-  - ELKitSDK (0.2.2):
-    - ELKitSDK/ELCategory (= 0.2.2)
-    - ELKitSDK/ELColor (= 0.2.2)
-    - ELKitSDK/ELDateModule (= 0.2.2)
-    - ELKitSDK/ELString (= 0.2.2)
-    - ELKitSDK/ELUtility (= 0.2.2)
-    - ELKitSDK/ELViewCategory (= 0.2.2)
-    - ELKitSDK/ELViewInput (= 0.2.2)
-  - ELKitSDK/ELCategory (0.2.2)
-  - ELKitSDK/ELColor (0.2.2)
-  - ELKitSDK/ELDateModule (0.2.2)
-  - ELKitSDK/ELString (0.2.2)
-  - ELKitSDK/ELUtility (0.2.2)
-  - ELKitSDK/ELViewCategory (0.2.2)
-  - ELKitSDK/ELViewInput (0.2.2):
-    - ELKitSDK/ELViewCategory
+  - ELKitSDK (0.2.3):
+    - ELKitSDK/ELCategory (= 0.2.3)
+    - ELKitSDK/EYInputView (= 0.2.3)
+    - ELKitSDK/EYRegular (= 0.2.3)
+    - ELKitSDK/EYUtils (= 0.2.3)
+  - ELKitSDK/ELCategory (0.2.3)
+  - ELKitSDK/EYInputView (0.2.3)
+  - ELKitSDK/EYRegular (0.2.3)
+  - ELKitSDK/EYUtils (0.2.3)
 
 DEPENDENCIES:
   - ELKitSDK (from `../`)
 
 EXTERNAL SOURCES:
   ELKitSDK:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  ELKitSDK: 7c9a58dbd8248e04d7ce0f7cf1de25253ca84852
+  ELKitSDK: d9f7246edd029a9e83389389f919807be86425ed
 
 PODFILE CHECKSUM: 7a5067db3d636ea19ee7b8a0a6604653b1bf92ff
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.7.5

@@ -31,6 +31,14 @@
     return self;
 }
 
+-(NSString *)el_removeAllSpace {
+    return [self el_removeSubString:@" "];
+}
+
+-(NSString *)el_removeSubString:(NSString *)subString {
+    return [self stringByReplacingOccurrencesOfString:subString withString:@""];
+}
+
 @end
 
 @implementation NSString (ELCharacterCalculate)

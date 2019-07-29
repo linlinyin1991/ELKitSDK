@@ -11,7 +11,8 @@
 
 - (NSString *)el_append:(NSString *)string;
 - (NSString *)el_insert:(NSString *)string atIndex:(NSInteger)index;
-
+-(NSString *)el_removeAllSpace;
+-(NSString *)el_removeSubString:(NSString *)subString;
 @end
 
 @interface NSString (ELCharacterCalculate)
