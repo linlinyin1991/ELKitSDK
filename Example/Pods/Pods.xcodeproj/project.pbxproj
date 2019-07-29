@@ -20,6 +20,16 @@
 		B11CB9FE0E373F3F6B27BE145796620B /* Pods-ELKitSDK_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7117AB5DA43F42680A0C592ED05391D1 /* Pods-ELKitSDK_Example-dummy.m */; };
 		B4055DC0B808BAAE7F3BB2CC0C04E278 /* ELTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 1705252F5FF173F366648877D6ED4136 /* ELTextField.m */; };
 		BC64AFF6A57F62488E7EE76297381FEC /* UIView+ELExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = AC89F0C197C8B28524648C6AF1560EEB /* UIView+ELExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD19A7D622EECCD00096FC45 /* ELEncryptAES.h in Headers */ = {isa = PBXBuildFile; fileRef = BD19A7D422EECCD00096FC45 /* ELEncryptAES.h */; };
+		BD19A7D722EECCD00096FC45 /* ELEncryptAES.m in Sources */ = {isa = PBXBuildFile; fileRef = BD19A7D522EECCD00096FC45 /* ELEncryptAES.m */; };
+		BD19A7DA22EECCEC0096FC45 /* ELEncryptMD5.h in Headers */ = {isa = PBXBuildFile; fileRef = BD19A7D822EECCEC0096FC45 /* ELEncryptMD5.h */; };
+		BD19A7DB22EECCEC0096FC45 /* ELEncryptMD5.m in Sources */ = {isa = PBXBuildFile; fileRef = BD19A7D922EECCEC0096FC45 /* ELEncryptMD5.m */; };
+		BD19A7DE22EECD050096FC45 /* ELEncryptRSA.h in Headers */ = {isa = PBXBuildFile; fileRef = BD19A7DC22EECD050096FC45 /* ELEncryptRSA.h */; };
+		BD19A7DF22EECD060096FC45 /* ELEncryptRSA.m in Sources */ = {isa = PBXBuildFile; fileRef = BD19A7DD22EECD050096FC45 /* ELEncryptRSA.m */; };
+		BD19A7E222EECD5A0096FC45 /* NSData+ELEncode.h in Headers */ = {isa = PBXBuildFile; fileRef = BD19A7E022EECD5A0096FC45 /* NSData+ELEncode.h */; };
+		BD19A7E322EECD5A0096FC45 /* NSData+ELEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = BD19A7E122EECD5A0096FC45 /* NSData+ELEncode.m */; };
+		BD19A7E622EECD720096FC45 /* NSString+ELEncode.h in Headers */ = {isa = PBXBuildFile; fileRef = BD19A7E422EECD710096FC45 /* NSString+ELEncode.h */; };
+		BD19A7E722EECD720096FC45 /* NSString+ELEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = BD19A7E522EECD720096FC45 /* NSString+ELEncode.m */; };
 		BEA9FDE7C2ED8667F43E4C882616A26D /* UIView+ELExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 475DDCD25A64DAB33409506C011A2FF2 /* UIView+ELExtension.m */; };
 		C5E293C8BB98309994E600F9FBFDBE6F /* ELKitSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D8FA692DF01C00F3A1563C065883DD9D /* ELKitSDK-dummy.m */; };
 		CBC6712212320CAA060ACF5603EC325E /* Pods-ELKitSDK_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E39411AE8DAA549067AE9793ADBBFFA /* Pods-ELKitSDK_Tests-dummy.m */; };
@@ -64,23 +74,23 @@
 		312B988EF117AE4DE76A268D970131FE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		374D3E925FF7070C4D26211B939742BC /* Pods-ELKitSDK_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ELKitSDK_Example.modulemap"; sourceTree = "<group>"; };
 		3ED25BD64E0284FB242BBCE132852C5D /* UIColor+ELExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+ELExtension.h"; path = "ELKitSDK/Classes/ELCategory/UIColor+ELExtension.h"; sourceTree = "<group>"; };
-		435B9EBC6BDFC7245C2399498057D9D5 /* ELKitSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ELKitSDK.framework; path = ELKitSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		435B9EBC6BDFC7245C2399498057D9D5 /* ELKitSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ELKitSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		436BAA54A31999B53B3CC7115C55FE50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		475DDCD25A64DAB33409506C011A2FF2 /* UIView+ELExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+ELExtension.m"; path = "ELKitSDK/Classes/ELCategory/UIView+ELExtension.m"; sourceTree = "<group>"; };
 		490D33629E14BF12B2E3C35F8FB2A42F /* ELKitSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ELKitSDK-prefix.pch"; sourceTree = "<group>"; };
 		5401108DC0BCF2E2B66C18DA57ECBFCC /* NSString+ELExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+ELExtension.h"; path = "ELKitSDK/Classes/ELCategory/NSString+ELExtension.h"; sourceTree = "<group>"; };
 		5501FAE03A782014E75701B157E9DD20 /* ELTextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ELTextView.m; path = ELKitSDK/Classes/EYInputView/ELTextView.m; sourceTree = "<group>"; };
 		5996A090C4ACCD877F19FF9A998CB2FF /* Pods-ELKitSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ELKitSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		5BCECDEF69EC00478D50FEE21F6D121E /* Pods_ELKitSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ELKitSDK_Tests.framework; path = "Pods-ELKitSDK_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BCECDEF69EC00478D50FEE21F6D121E /* Pods_ELKitSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ELKitSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BEE35794C9FF81592587AA39FDCE364 /* Pods-ELKitSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ELKitSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6072B991B1FB0F60322F623E87D7314F /* Pods-ELKitSDK_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ELKitSDK_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		63375F229D76C487FB5CEB2D5A8B33A3 /* NSString+ELExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+ELExtension.m"; path = "ELKitSDK/Classes/ELCategory/NSString+ELExtension.m"; sourceTree = "<group>"; };
 		68D58AE9735CCF11854E1212D2BD6200 /* Pods-ELKitSDK_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ELKitSDK_Tests-umbrella.h"; sourceTree = "<group>"; };
 		7117AB5DA43F42680A0C592ED05391D1 /* Pods-ELKitSDK_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ELKitSDK_Example-dummy.m"; sourceTree = "<group>"; };
 		7BDDA4B9BC06DC82CC1F78E475ADC3C9 /* Pods-ELKitSDK_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ELKitSDK_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		88E2ACB0A4A08C7DE43F789D3253039C /* Pods_ELKitSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ELKitSDK_Example.framework; path = "Pods-ELKitSDK_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		88E2ACB0A4A08C7DE43F789D3253039C /* Pods_ELKitSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ELKitSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95D7826480F73B8E064E3D5C973EAAD6 /* ELTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ELTextField.h; path = ELKitSDK/Classes/EYInputView/ELTextField.h; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E2395B85945B1BD6AC3D1D4F03997B7 /* ELKitSDK-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ELKitSDK-Info.plist"; sourceTree = "<group>"; };
 		9F3BB796B60B5AC00928563E0328A7D5 /* ELRegular.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ELRegular.h; path = ELKitSDK/Classes/EYRegular/ELRegular.h; sourceTree = "<group>"; };
 		A7675C99D5677E3D18387E0A95286307 /* ELKitSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ELKitSDK-umbrella.h"; sourceTree = "<group>"; };
@@ -89,16 +99,26 @@
 		AFABBCDA4D85A32668ED4142A0B30D07 /* Pods-ELKitSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ELKitSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
 		BB609648FCC550CA639646704976B7EA /* Pods-ELKitSDK_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ELKitSDK_Example-Info.plist"; sourceTree = "<group>"; };
 		BC9B3BA65AC3D5EFB3767088B2BDC7AB /* Pods-ELKitSDK_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ELKitSDK_Tests.modulemap"; sourceTree = "<group>"; };
+		BD19A7D422EECCD00096FC45 /* ELEncryptAES.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ELEncryptAES.h; path = ELKitSDK/Classes/ELEncrypt/ELEncryptAES.h; sourceTree = "<group>"; };
+		BD19A7D522EECCD00096FC45 /* ELEncryptAES.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ELEncryptAES.m; path = ELKitSDK/Classes/ELEncrypt/ELEncryptAES.m; sourceTree = "<group>"; };
+		BD19A7D822EECCEC0096FC45 /* ELEncryptMD5.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ELEncryptMD5.h; path = ELKitSDK/Classes/ELEncrypt/ELEncryptMD5.h; sourceTree = "<group>"; };
+		BD19A7D922EECCEC0096FC45 /* ELEncryptMD5.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ELEncryptMD5.m; path = ELKitSDK/Classes/ELEncrypt/ELEncryptMD5.m; sourceTree = "<group>"; };
+		BD19A7DC22EECD050096FC45 /* ELEncryptRSA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ELEncryptRSA.h; path = ELKitSDK/Classes/ELEncrypt/ELEncryptRSA.h; sourceTree = "<group>"; };
+		BD19A7DD22EECD050096FC45 /* ELEncryptRSA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ELEncryptRSA.m; path = ELKitSDK/Classes/ELEncrypt/ELEncryptRSA.m; sourceTree = "<group>"; };
+		BD19A7E022EECD5A0096FC45 /* NSData+ELEncode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSData+ELEncode.h"; path = "ELKitSDK/Classes/ELEncrypt/NSData+ELEncode.h"; sourceTree = "<group>"; };
+		BD19A7E122EECD5A0096FC45 /* NSData+ELEncode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "NSData+ELEncode.m"; path = "ELKitSDK/Classes/ELEncrypt/NSData+ELEncode.m"; sourceTree = "<group>"; };
+		BD19A7E422EECD710096FC45 /* NSString+ELEncode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSString+ELEncode.h"; path = "ELKitSDK/Classes/ELEncrypt/NSString+ELEncode.h"; sourceTree = "<group>"; };
+		BD19A7E522EECD720096FC45 /* NSString+ELEncode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "NSString+ELEncode.m"; path = "ELKitSDK/Classes/ELEncrypt/NSString+ELEncode.m"; sourceTree = "<group>"; };
 		C3684EEE6DC98EB863DF81CDAEC1CA6A /* ELTextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ELTextView.h; path = ELKitSDK/Classes/EYInputView/ELTextView.h; sourceTree = "<group>"; };
 		C9315BC66FB94C30B71A03B249921527 /* ELTextInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ELTextInput.h; path = ELKitSDK/Classes/EYInputView/ELTextInput.h; sourceTree = "<group>"; };
 		CA0F65A5A52E10290047A6E9FFFDE176 /* ELKitSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ELKitSDK.xcconfig; sourceTree = "<group>"; };
 		D67CA0E3A922EA6F7FFC9CD9D2498B4C /* NSDate+ELExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+ELExtension.h"; path = "ELKitSDK/Classes/ELCategory/NSDate+ELExtension.h"; sourceTree = "<group>"; };
-		D6E8422B79DFFBE2B9DA0868B4BF0BF3 /* ELKitSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ELKitSDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D6E8422B79DFFBE2B9DA0868B4BF0BF3 /* ELKitSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = ELKitSDK.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D8FA692DF01C00F3A1563C065883DD9D /* ELKitSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ELKitSDK-dummy.m"; sourceTree = "<group>"; };
-		DDA5889F67E088776BF198F26A9E460A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		DDA5889F67E088776BF198F26A9E460A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		E4A060C51DA56FD7FDCDCB2F2C0FB1A0 /* Pods-ELKitSDK_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ELKitSDK_Example-umbrella.h"; sourceTree = "<group>"; };
 		F33DCB53D483CD39A8372C2CC50D9F17 /* Pods-ELKitSDK_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ELKitSDK_Example-frameworks.sh"; sourceTree = "<group>"; };
-		F871E3272758A43388F891D54BABF25C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		F871E3272758A43388F891D54BABF25C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F94E148F01B847933E9C34FA6CCD1283 /* ELDeviceUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ELDeviceUtility.h; path = ELKitSDK/Classes/EYUtils/ELDeviceUtility.h; sourceTree = "<group>"; };
 		FAFDCB182A4C5DE2F211007600CAFBD9 /* UIColor+ELExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+ELExtension.m"; path = "ELKitSDK/Classes/ELCategory/UIColor+ELExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -229,6 +249,23 @@
 			name = EYInputView;
 			sourceTree = "<group>";
 		};
+		BD19A7D322EECC950096FC45 /* ELEncrypt */ = {
+			isa = PBXGroup;
+			children = (
+				BD19A7D422EECCD00096FC45 /* ELEncryptAES.h */,
+				BD19A7D522EECCD00096FC45 /* ELEncryptAES.m */,
+				BD19A7D822EECCEC0096FC45 /* ELEncryptMD5.h */,
+				BD19A7D922EECCEC0096FC45 /* ELEncryptMD5.m */,
+				BD19A7DC22EECD050096FC45 /* ELEncryptRSA.h */,
+				BD19A7DD22EECD050096FC45 /* ELEncryptRSA.m */,
+				BD19A7E022EECD5A0096FC45 /* NSData+ELEncode.h */,
+				BD19A7E122EECD5A0096FC45 /* NSData+ELEncode.m */,
+				BD19A7E422EECD710096FC45 /* NSString+ELEncode.h */,
+				BD19A7E522EECD720096FC45 /* NSString+ELEncode.m */,
+			);
+			name = ELEncrypt;
+			sourceTree = "<group>";
+		};
 		C85FA7451B7D633665202BDB9515D3CE /* EYUtils */ = {
 			isa = PBXGroup;
 			children = (
@@ -240,6 +277,7 @@
 		C87B99421E5C48BF9C6BC831B2668A00 /* ELKitSDK */ = {
 			isa = PBXGroup;
 			children = (
+				BD19A7D322EECC950096FC45 /* ELEncrypt */,
 				93FD4C1877F4FC2782E07578AF0A2ED7 /* ELCategory */,
 				985A2FEF2D9D90014FDD12667D72AB2A /* EYInputView */,
 				F18B1B2F4686AD8843CA142B90A84B31 /* EYRegular */,
@@ -317,13 +355,18 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD19A7E222EECD5A0096FC45 /* NSData+ELEncode.h in Headers */,
 				0945731E83B2C9694D2F894D6C411A83 /* ELDeviceUtility.h in Headers */,
+				BD19A7E622EECD720096FC45 /* NSString+ELEncode.h in Headers */,
 				8EC12BCB8F6A41477D7CA7E2B65F1E02 /* ELKitSDK-umbrella.h in Headers */,
 				8C98C8B5E81CCA5B4D06AE36A41E28AD /* ELRegular.h in Headers */,
 				CEA0BA13C64CC1B58358E25CCF69A6DF /* ELTextField.h in Headers */,
+				BD19A7DA22EECCEC0096FC45 /* ELEncryptMD5.h in Headers */,
+				BD19A7DE22EECD050096FC45 /* ELEncryptRSA.h in Headers */,
 				D89B50CE85C153CB3365ACB74F42A338 /* ELTextInput.h in Headers */,
 				6F2209596F5AB087C639B5275D2AC938 /* ELTextView.h in Headers */,
 				D367879CA91426E28AEE37EFD6D3CD63 /* NSDate+ELExtension.h in Headers */,
+				BD19A7D622EECCD00096FC45 /* ELEncryptAES.h in Headers */,
 				CC4DEC139CE43DC1012D163B96E3258A /* NSString+ELExtension.h in Headers */,
 				DC7CDE56D5CFA4457B9577FA9373A3DA /* UIColor+ELExtension.h in Headers */,
 				BC64AFF6A57F62488E7EE76297381FEC /* UIView+ELExtension.h in Headers */,
@@ -470,13 +513,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD19A7D722EECCD00096FC45 /* ELEncryptAES.m in Sources */,
 				C5E293C8BB98309994E600F9FBFDBE6F /* ELKitSDK-dummy.m in Sources */,
 				5B3D846CD5A92B6CE2D14142E343011D /* ELRegular.m in Sources */,
 				B4055DC0B808BAAE7F3BB2CC0C04E278 /* ELTextField.m in Sources */,
 				84F5E6C2DCADB57731552299AF870322 /* ELTextView.m in Sources */,
 				DF197DFC7AC26E7CE01E33C847FF2D12 /* NSDate+ELExtension.m in Sources */,
 				5E0328B17E248E4499AAFFCC8E793D9F /* NSString+ELExtension.m in Sources */,
+				BD19A7E722EECD720096FC45 /* NSString+ELEncode.m in Sources */,
+				BD19A7DB22EECCEC0096FC45 /* ELEncryptMD5.m in Sources */,
 				DBD06B6954CA3D143967F02B2290B73A /* UIColor+ELExtension.m in Sources */,
+				BD19A7E322EECD5A0096FC45 /* NSData+ELEncode.m in Sources */,
+				BD19A7DF22EECD060096FC45 /* ELEncryptRSA.m in Sources */,
 				BEA9FDE7C2ED8667F43E4C882616A26D /* UIView+ELExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -613,8 +661,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

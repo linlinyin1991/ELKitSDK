@@ -28,11 +28,11 @@
 
 - (void)setUI {
     self.textView = [[UITextView alloc] initWithFrame:self.bounds];
-    self.minHeight = self.height;
+    self.minHeight = self.el_height;
     [self addSubview:self.textView];
     self.textView.delegate = self;
     
-    self.placeholderLabel = [[UILabel alloc] initWithFrame:CGRectMake(2, 5, self.width - 4, 20)];
+    self.placeholderLabel = [[UILabel alloc] initWithFrame:CGRectMake(2, 5, self.el_width - 4, 20)];
     self.placeholderLabel.font = [UIFont systemFontOfSize:14];
     self.placeholderLabel.textColor = [UIColor lightGrayColor];
     self.placeholderLabel.text = @"请输入...";
@@ -73,7 +73,7 @@
     self.layer.borderWidth = width;
     self.layer.cornerRadius = radius;
     self.textView.textContainerInset = UIEdgeInsetsMake(radius, radius, radius, radius);
-    self.placeholderLabel.frame = CGRectMake(radius, radius, self.textView.width - 2 * radius, 16);
+    self.placeholderLabel.frame = CGRectMake(radius, radius, self.textView.el_width - 2 * radius, 16);
 }
 
 
@@ -111,7 +111,7 @@
     self.placeholderLabel.hidden = (textView.text.length > 0 ? YES : NO);
     if (self.autoAdjust) {
         static CGFloat maxHeight = MAXFLOAT;
-        CGSize constraintSize = CGSizeMake(textView.width, MAXFLOAT);
+        CGSize constraintSize = CGSizeMake(textView.el_width, MAXFLOAT);
         CGSize size = [textView sizeThatFits:constraintSize];
         if (size.height <= self.minHeight) {
             size.height = self.minHeight;
@@ -126,8 +126,8 @@
                 textView.scrollEnabled = NO;    // 不允许滚动
             }
         }
-        textView.height = size.height;
-        self.height = textView.height;
+        textView.el_height = size.height;
+        self.el_height = textView.el_height;
     }
     if ([self.delegate respondsToSelector:@selector(el_textViewDidChange:)]) {
         [self.delegate el_textViewDidChange:self.textView];
