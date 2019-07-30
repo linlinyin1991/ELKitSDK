@@ -12,16 +12,13 @@
 @implementation ELEncryptAES
 
 + (nullable NSString *)stringByAes256Encrypt:(NSString *)string key:(NSString *)key {
-    NSData *result = [self encryptOperation:kCCEncrypt mode:ELEncryptAES256 value:string.el_utf8Data key:key options:kCCOptionPKCS7Padding | kCCOptionECBMode iv:nil];
-    if (result.length == 0) {
-        return @"";
-    }
+    NSData *result = [self el_dataByEncrypt:string.el_utf8Data key:key mode:ELEncryptAES256 options:kCCOptionPKCS7Padding|kCCOptionECBMode iv:nil];
     NSString *resultStr = result.el_base64Encode.el_utf8String;
     return resultStr;
 }
 
 + (nullable NSString *)stringByAes256Decrypt:(NSString *)string key:(NSString *)key {
-    NSData *result = [self encryptOperation:kCCDecrypt mode:ELEncryptAES256 value:string.el_base64DecodeData key:key options:kCCOptionPKCS7Padding | kCCOptionECBMode iv:nil];
+    NSData *result = [self el_dataByDecrypt:string.el_base64DecodeData key:key mode:ELEncryptAES256 options:kCCOptionPKCS7Padding | kCCOptionECBMode iv:nil];
     return result.el_utf8String;
 }
 

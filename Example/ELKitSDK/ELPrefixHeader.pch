@@ -1,0 +1,15 @@
+//
+//  ELPrefixHeader.pch
+//  ELKitSDK_Example
+//
+//  Created by YinLinLin on 2019/7/30.
+//  Copyright © 2019 yin linlin. All rights reserved.
+//
+
+#ifndef ELPrefixHeader_pch
+#define ELPrefixHeader_pch
+
+#import <ELKitSDK/ELDeviceUtility.h>
+
+
+#endif /* ELPrefixHeader_pch */

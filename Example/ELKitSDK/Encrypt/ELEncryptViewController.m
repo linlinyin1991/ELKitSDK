@@ -61,9 +61,10 @@
 - (IBAction)aes256BtnPressed:(id)sender {
     self.encryptType = 2;
     if (self.textField.text) {
-        self.encryptResult.text = [ELEncryptAES stringByAes256Encrypt:self.textField.text key:self.key];
+        NSString *encryptResult = [ELEncryptAES stringByAes256Encrypt:self.textField.text key:self.key];
+        self.encryptResult.text = encryptResult;
+        NSLog(@"%@",encryptResult);
     }
-    
 }
 
 - (IBAction)decryptBtnPressed:(id)sender {
@@ -74,7 +75,8 @@
         NSData *result = [ELEncryptAES el_dataByDecrypt:self.encryptResult.text.el_base64DecodeData key:self.key mode:ELEncryptAES192 options:kCCOptionPKCS7Padding iv:self.iv];
         self.decryptResult.text = result.el_utf8String;
     } else if (self.encryptType == 2) {
-        self.decryptResult.text = [ELEncryptAES stringByAes256Decrypt:self.encryptResult.text key:self.key];
+        NSString *decryptResult = [ELEncryptAES stringByAes256Decrypt:self.encryptResult.text key:self.key];
+        self.decryptResult.text = decryptResult;
     }
 }
 
