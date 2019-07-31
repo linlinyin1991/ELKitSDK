@@ -10,6 +10,6 @@
 #define ELPrefixHeader_pch
 
 #import <ELKitSDK/ELDeviceUtility.h>
-
+#import <ELKitSDK/UIView+ELExtension.h>
 
 #endif /* ELPrefixHeader_pch */

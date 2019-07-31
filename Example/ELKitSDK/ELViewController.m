@@ -9,6 +9,7 @@
 #import "ELViewController.h"
 #import <ELKitSDK/ELDeviceUtility.h>
 #import "ELEncryptViewController.h"
+#import "ELPageScrollViewController.h"
 
 @interface ELViewController ()<UITableViewDataSource, UITableViewDelegate>
 
@@ -24,7 +25,7 @@
 {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    _titleArray = @[@"Encrypt"];
+    _titleArray = @[@"Encrypt", @"pageView"];
     [self.view addSubview:self.tableView];
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -48,6 +49,11 @@
         case 0: {
             ELEncryptViewController *encryptVC = [[ELEncryptViewController alloc] init];
             [self.navigationController pushViewController:encryptVC animated:YES];
+        }
+            break;
+        case 1: {
+            ELPageScrollViewController *pageVC = [[ELPageScrollViewController alloc] init];
+            [self.navigationController pushViewController:pageVC animated:YES];
         }
             break;
             
