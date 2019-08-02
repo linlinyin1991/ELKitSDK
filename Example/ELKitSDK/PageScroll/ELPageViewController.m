@@ -1,22 +1,22 @@
 //
-//  ELPage1ViewController.m
+//  ELPageViewController.m
 //  ELKitSDK_Example
 //
 //  Created by YinLinLin on 2019/7/31.
 //  Copyright © 2019 yin linlin. All rights reserved.
 //
 
-#import "ELPage1ViewController.h"
+#import "ELPageViewController.h"
 
 
-@interface ELPage1ViewController ()<UITableViewDelegate, UITableViewDataSource>
+@interface ELPageViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *titleArray;
 @property (nonatomic, copy) void(^scrollBlock)(UIScrollView *scrollView);
 @end
 
-@implementation ELPage1ViewController
+@implementation ELPageViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -61,11 +61,11 @@
 }
 
 - (void)el_viewDidAppear {
-    
+    NSLog(@"viewAppear-%ld",self.index);
 }
 
 - (void)el_viewDidDisappear {
-    
+    NSLog(@"viewDisappear-%ld",self.index);
 }
 
 - (void)el_scrollViewDidScrollBlock:(void (^)(UIScrollView * _Nonnull))scrollBlock {

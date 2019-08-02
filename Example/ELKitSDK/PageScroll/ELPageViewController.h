@@ -1,5 +1,5 @@
 //
-//  ELPage1ViewController.h
+//  ELPageViewController.h
 //  ELKitSDK_Example
 //
 //  Created by YinLinLin on 2019/7/31.
@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ELPage1ViewController : UIViewController<ELPageViewProtocol>
+@interface ELPageViewController : UIViewController<ELPageViewProtocol>
 
 @property (nonatomic, assign) NSInteger index;
 

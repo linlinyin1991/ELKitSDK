@@ -7,7 +7,7 @@
 //
 
 #import "ELPageScrollViewController.h"
-#import "ELPage1ViewController.h"
+#import "ELPageViewController.h"
 #import "ELPageViewProtocol.h"
 
 @interface ELRootTableView : UITableView
@@ -33,9 +33,13 @@
 
 @property (nonatomic, strong) UISegmentedControl *segment;
 
-@property (nonatomic, strong) ELPage1ViewController *page1VC;
+@property (nonatomic, strong) ELPageViewController *page1VC;
 
-@property (nonatomic, strong) ELPage1ViewController *page2VC;
+@property (nonatomic, strong) ELPageViewController *page2VC;
+
+@property (nonatomic, strong) ELPageViewController *page3VC;
+
+@property (nonatomic, strong) ELPageViewController *page4VC;
 
 @property (nonatomic, strong) NSArray *titleArray;
 
@@ -45,13 +49,19 @@
 /// 默认为YES
 @property (nonatomic, assign) BOOL scrollEnabled;
 
+@property (nonatomic, strong) NSMutableArray *subViewControllers;
 @end
 
 @implementation ELPageScrollViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _titleArray = @[@"page1",@"page2"];
+    _titleArray = @[@"page1",@"page2",@"page3",@"page4"];
+    _subViewControllers = [[NSMutableArray alloc] init];
+    [_subViewControllers addObject:self.page1VC];
+    [_subViewControllers addObject:self.page2VC];
+    [_subViewControllers addObject:self.page3VC];
+    [_subViewControllers addObject:self.page4VC];
     self.headerViewHeight = 200;
     _pageViewHeight = kScreenHeight - kTopHeight - self.segment.el_height;
     self.scrollEnabled = YES;
@@ -61,20 +71,24 @@
 }
 
 - (void)selectAtIndex:(NSInteger)index {
-    if (index == 0) {
-        if (![self.childViewControllers containsObject:self.page1VC]) {
-            [self addChildViewController:self.page1VC];
-            self.page1VC.view.frame = CGRectMake(0, 0, kScreenWidth, self.pageViewHeight);
-            [self.pageScrollView addSubview:self.page1VC.view];
+    UIViewController<ELPageViewProtocol> *vc = self.subViewControllers[index];
+    if (![self.childViewControllers containsObject:vc]) {
+        [self addChildViewController:vc];
+        vc.view.frame = CGRectMake(kScreenWidth*index, 0, kScreenWidth, self.pageViewHeight);
+        [self.pageScrollView addSubview:vc.view];
+    }
+    [self.pageScrollView scrollRectToVisible:vc.view.frame animated:NO];
+    
+    
+    for (NSInteger i = 0; i < self.subViewControllers.count; i ++) {
+        UIViewController<ELPageViewProtocol> *vc = self.subViewControllers[i];
+        if ([self.childViewControllers containsObject:vc]) {
+            if (i == index) {
+                [vc el_viewDidAppear];
+            } else {
+                [vc el_viewDidDisappear];
+            }
         }
-        [self.pageScrollView scrollRectToVisible:self.page1VC.view.frame animated:NO];
-    } else {
-        if (![self.childViewControllers containsObject:self.page2VC]) {
-            [self addChildViewController:self.page2VC];
-            self.page2VC.view.frame = CGRectMake(kScreenWidth, 0, kScreenWidth, self.pageViewHeight);
-            [self.pageScrollView addSubview:self.page2VC.view];
-        }
-        [self.pageScrollView scrollRectToVisible:self.page2VC.view.frame animated:NO];
     }
 }
 
@@ -122,7 +136,14 @@
         [self.tableView setContentOffset:CGPointMake(0, changeScrollHeight)];
     }
 }
-    
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
+    NSInteger pageIndex = scrollView.contentOffset.x/CGRectGetWidth(self.view.frame);
+    self.segment.selectedSegmentIndex = pageIndex;
+    [self selectAtIndex:pageIndex];
+}
+
+
 - (UIView *)headerView {
     if (!_headerView) {
         _headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, self.headerViewHeight)];
@@ -172,11 +193,10 @@
     return _segment;
 }
 
-- (ELPage1ViewController *)page1VC {
+- (ELPageViewController *)page1VC {
     if (!_page1VC) {
-        _page1VC = [[ELPage1ViewController alloc] init];
+        _page1VC = [[ELPageViewController alloc] init];
         _page1VC.index = 0;
-        _page1VC.view.backgroundColor = [UIColor purpleColor];
         [_page1VC el_scrollViewDidScrollBlock:^(UIScrollView * scrollView) {
             if (!self.scrollEnabled) {
                 CGFloat offset = scrollView.contentOffset.y;
@@ -193,11 +213,10 @@
 }
 
 
-- (ELPage1ViewController *)page2VC {
+- (ELPageViewController *)page2VC {
     if (!_page2VC) {
-        _page2VC = [[ELPage1ViewController alloc] init];
+        _page2VC = [[ELPageViewController alloc] init];
         _page2VC.index = 1;
-        _page2VC.view.backgroundColor = [UIColor grayColor];
         [_page2VC el_scrollViewDidScrollBlock:^(UIScrollView * scrollView) {
             if (!self.scrollEnabled) {
                 CGFloat offset = scrollView.contentOffset.y;
@@ -212,6 +231,46 @@
     }
     return _page2VC;
 }
+
+- (ELPageViewController *)page3VC {
+    if (!_page3VC) {
+        _page3VC = [[ELPageViewController alloc] init];
+        _page3VC.index = 2;
+        [_page3VC el_scrollViewDidScrollBlock:^(UIScrollView * scrollView) {
+            if (!self.scrollEnabled) {
+                CGFloat offset = scrollView.contentOffset.y;
+                if (offset <= 0) {
+                    self.scrollEnabled = YES;
+                    [scrollView setContentOffset:CGPointMake(0, 0)];
+                }
+            } else {
+                [scrollView setContentOffset:CGPointMake(0, 0)];
+            }
+        }];
+    }
+    return _page3VC;
+}
+
+
+- (ELPageViewController *)page4VC {
+    if (!_page4VC) {
+        _page4VC = [[ELPageViewController alloc] init];
+        _page4VC.index = 3;
+        [_page4VC el_scrollViewDidScrollBlock:^(UIScrollView * scrollView) {
+            if (!self.scrollEnabled) {
+                CGFloat offset = scrollView.contentOffset.y;
+                if (offset <= 0) {
+                    self.scrollEnabled = YES;
+                    [scrollView setContentOffset:CGPointMake(0, 0)];
+                }
+            } else {
+                [scrollView setContentOffset:CGPointMake(0, 0)];
+            }
+        }];
+    }
+    return _page4VC;
+}
+
 
 /*
 #pragma mark - Navigation
