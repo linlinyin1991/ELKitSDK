@@ -9,7 +9,7 @@
 #import "ELViewController.h"
 #import <ELKitSDK/ELDeviceUtility.h>
 #import "ELEncryptViewController.h"
-#import "ELPageScrollViewController.h"
+#import "ELPageRootController.h"
 
 @interface ELViewController ()<UITableViewDataSource, UITableViewDelegate>
 
@@ -52,7 +52,7 @@
         }
             break;
         case 1: {
-            ELPageScrollViewController *pageVC = [[ELPageScrollViewController alloc] init];
+            ELPageRootController *pageVC = [[ELPageRootController alloc] init];
             [self.navigationController pushViewController:pageVC animated:YES];
         }
             break;

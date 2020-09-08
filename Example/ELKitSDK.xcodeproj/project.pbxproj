@@ -26,8 +26,9 @@
 		909C6319633EB0460D850A80 /* Pods_ELKitSDK_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E35D73B26EE8FC7811152297 /* Pods_ELKitSDK_Example.framework */; };
 		BD19A7EE22EEDD960096FC45 /* ELEncryptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD19A7EC22EEDD960096FC45 /* ELEncryptViewController.m */; };
 		BD19A7EF22EEDD960096FC45 /* ELEncryptViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD19A7ED22EEDD960096FC45 /* ELEncryptViewController.xib */; };
-		BDDA2B2E22F02DC0006051E3 /* ELPageScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDDA2B2D22F02DC0006051E3 /* ELPageScrollViewController.m */; };
-		BDE1C81022F1309B00B77D39 /* ELPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDE1C80F22F1309B00B77D39 /* ELPageViewController.m */; };
+		BDE1C81022F1309B00B77D39 /* ELPageChildController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDE1C80F22F1309B00B77D39 /* ELPageChildController.m */; };
+		D2D6DFBC25063C8C00681BED /* ELMultGestureScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D6DFBB25063C8C00681BED /* ELMultGestureScrollView.m */; };
+		D2D6DFBF25063CDC00681BED /* ELPageRootController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D6DFBE25063CDC00681BED /* ELPageRootController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,13 +70,15 @@
 		BD19A7EB22EEDD960096FC45 /* ELEncryptViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELEncryptViewController.h; sourceTree = "<group>"; };
 		BD19A7EC22EEDD960096FC45 /* ELEncryptViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELEncryptViewController.m; sourceTree = "<group>"; };
 		BD19A7ED22EEDD960096FC45 /* ELEncryptViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ELEncryptViewController.xib; sourceTree = "<group>"; };
-		BDDA2B2C22F02DC0006051E3 /* ELPageScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELPageScrollViewController.h; sourceTree = "<group>"; };
-		BDDA2B2D22F02DC0006051E3 /* ELPageScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELPageScrollViewController.m; sourceTree = "<group>"; };
 		BDDA2B3022F06768006051E3 /* ELPageViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELPageViewProtocol.h; sourceTree = "<group>"; };
 		BDDA2B3522F06899006051E3 /* ELPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELPrefixHeader.pch; sourceTree = "<group>"; };
-		BDE1C80E22F1309A00B77D39 /* ELPageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELPageViewController.h; sourceTree = "<group>"; };
-		BDE1C80F22F1309B00B77D39 /* ELPageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELPageViewController.m; sourceTree = "<group>"; };
+		BDE1C80E22F1309A00B77D39 /* ELPageChildController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELPageChildController.h; sourceTree = "<group>"; };
+		BDE1C80F22F1309B00B77D39 /* ELPageChildController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELPageChildController.m; sourceTree = "<group>"; };
 		C0E9501D969CCC865F13462D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		D2D6DFBA25063C8C00681BED /* ELMultGestureScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELMultGestureScrollView.h; sourceTree = "<group>"; };
+		D2D6DFBB25063C8C00681BED /* ELMultGestureScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELMultGestureScrollView.m; sourceTree = "<group>"; };
+		D2D6DFBD25063CDC00681BED /* ELPageRootController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELPageRootController.h; sourceTree = "<group>"; };
+		D2D6DFBE25063CDC00681BED /* ELPageRootController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELPageRootController.m; sourceTree = "<group>"; };
 		D65E3A403ECC25574EF56132 /* Pods-ELKitSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ELKitSDK_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ELKitSDK_Example/Pods-ELKitSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		E1F8CA3902E7DE76B2241CA2 /* Pods-ELKitSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ELKitSDK_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ELKitSDK_Tests/Pods-ELKitSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		E35D73B26EE8FC7811152297 /* Pods_ELKitSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ELKitSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -226,10 +229,12 @@
 			isa = PBXGroup;
 			children = (
 				BDDA2B3022F06768006051E3 /* ELPageViewProtocol.h */,
-				BDDA2B2C22F02DC0006051E3 /* ELPageScrollViewController.h */,
-				BDDA2B2D22F02DC0006051E3 /* ELPageScrollViewController.m */,
-				BDE1C80E22F1309A00B77D39 /* ELPageViewController.h */,
-				BDE1C80F22F1309B00B77D39 /* ELPageViewController.m */,
+				D2D6DFBD25063CDC00681BED /* ELPageRootController.h */,
+				D2D6DFBE25063CDC00681BED /* ELPageRootController.m */,
+				BDE1C80E22F1309A00B77D39 /* ELPageChildController.h */,
+				BDE1C80F22F1309B00B77D39 /* ELPageChildController.m */,
+				D2D6DFBA25063C8C00681BED /* ELMultGestureScrollView.h */,
+				D2D6DFBB25063C8C00681BED /* ELMultGestureScrollView.m */,
 			);
 			path = PageScroll;
 			sourceTree = "<group>";
@@ -396,11 +401,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* ELAppDelegate.m in Sources */,
-				BDDA2B2E22F02DC0006051E3 /* ELPageScrollViewController.m in Sources */,
 				BD19A7EE22EEDD960096FC45 /* ELEncryptViewController.m in Sources */,
 				6003F5A7195388D20070C39A /* ELViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
-				BDE1C81022F1309B00B77D39 /* ELPageViewController.m in Sources */,
+				BDE1C81022F1309B00B77D39 /* ELPageChildController.m in Sources */,
+				D2D6DFBC25063C8C00681BED /* ELMultGestureScrollView.m in Sources */,
+				D2D6DFBF25063CDC00681BED /* ELPageRootController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

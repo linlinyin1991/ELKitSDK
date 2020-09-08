@@ -1,31 +1,32 @@
 //
-//  ELPageViewController.m
+//  ELPageChildController.m
 //  ELKitSDK_Example
 //
 //  Created by YinLinLin on 2019/7/31.
 //  Copyright © 2019 yin linlin. All rights reserved.
 //
 
-#import "ELPageViewController.h"
+#import "ELPageChildController.h"
 
 
-@interface ELPageViewController ()<UITableViewDelegate, UITableViewDataSource>
+@interface ELPageChildController ()<UITableViewDelegate, UITableViewDataSource>
+
+@property (nonatomic, assign) CGFloat viewHeight;
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) NSMutableArray *titleArray;
 @property (nonatomic, copy) void(^scrollBlock)(UIScrollView *scrollView);
 @end
 
-@implementation ELPageViewController
+@implementation ELPageChildController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     _titleArray = [[NSMutableArray alloc] init];
     for (NSInteger i = 0; i < 30; i ++) {
-        [_titleArray addObject:[NSString stringWithFormat:@"title:%ld-%ld",self.index,i]];
+        [_titleArray addObject:[NSString stringWithFormat:@"title:%ld-%ld",self.index, i]];
     }
     [self.view addSubview:self.tableView];
-    self.tableView.frame = CGRectMake(0, 0, kScreenWidth, self.view.el_height);
 }
 
     
@@ -56,26 +57,29 @@
 }
 #pragma mark - ELPageViewProtocol
 
-- (UIScrollView *)pageScrollView {
+- (UIScrollView *)el_subPageScrollView {
     return self.tableView;
 }
 
 - (void)el_viewDidAppear {
-    NSLog(@"viewAppear-%ld",self.index);
 }
 
 - (void)el_viewDidDisappear {
-    NSLog(@"viewDisappear-%ld",self.index);
+    
 }
 
-- (void)el_scrollViewDidScrollBlock:(void (^)(UIScrollView * _Nonnull))scrollBlock {
+- (void)el_scrollViewDidScrollBlock:(nonnull void (^)(UIScrollView * _Nonnull))scrollBlock {
     self.scrollBlock = scrollBlock;
+}
+
+- (void)el_setSubPageViewHeight:(CGFloat)viewHeight hasBottomBar:(BOOL)hasBottomBar {
+    self.viewHeight = viewHeight;
 }
 #pragma mark - property
 
 - (UITableView *)tableView {
     if (!_tableView) {
-        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, 0) style:UITableViewStylePlain];
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, self.viewHeight) style:UITableViewStylePlain];
         _tableView.delegate = self;
         _tableView.dataSource = self;
         _tableView.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, 1)];

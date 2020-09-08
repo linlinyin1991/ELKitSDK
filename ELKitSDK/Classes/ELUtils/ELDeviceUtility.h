@@ -21,15 +21,17 @@
 
 #define kTopHeight             kNavigationBarHeight + kStatusHeight
 
-#define isIphoneX         if (@available(iOS 11.0, *)) { \
-    CGFloat height = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bottom; \
-    return (height > 0); \
-} else { \
-    return NO; \
-} \
+#define kIsBangsScreen ({\
+    BOOL isBangsScreen = NO; \
+    if (@available(iOS 11.0, *)) { \
+    UIWindow *window = [[UIApplication sharedApplication].windows firstObject]; \
+    isBangsScreen = window.safeAreaInsets.bottom > 0; \
+    } \
+    isBangsScreen; \
+})
 
 //底部安全距离
-#define kSafeBottom            (isIphoneX?34.0:0.0)
+#define kSafeBottom            (kIsBangsScreen?34.0:0.0)
 
 //底部tabbar高度
 #define kTabBarHeight          49.0
