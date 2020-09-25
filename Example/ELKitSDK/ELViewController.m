@@ -7,13 +7,14 @@
 //
 
 #import "ELViewController.h"
-#import <ELKitSDK/ELDeviceUtility.h>
 #import "ELEncryptViewController.h"
 #import "ELPageRootController.h"
+#import "ELSampleTableView.h"
+#import "ELAnimalRootController.h"
 
-@interface ELViewController ()<UITableViewDataSource, UITableViewDelegate>
+@interface ELViewController ()
 
-@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) ELSampleTableView *tableView;
 
 @property (nonatomic, strong) NSArray *titleArray;
 
@@ -25,27 +26,13 @@
 {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    _titleArray = @[@"Encrypt", @"pageView"];
+    _titleArray = @[@"Encrypt", @"pageView", @"Animal"];
     [self.view addSubview:self.tableView];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.titleArray.count;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
-    }
-    cell.textLabel.text = [self.titleArray objectAtIndex:indexPath.row];
-    return cell;
-}
-
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    NSInteger row = indexPath.row;
-    switch (row) {
+- (void)selectAtIndex:(NSInteger)index {
+    switch (index) {
         case 0: {
             ELEncryptViewController *encryptVC = [[ELEncryptViewController alloc] init];
             [self.navigationController pushViewController:encryptVC animated:YES];
@@ -56,27 +43,24 @@
             [self.navigationController pushViewController:pageVC animated:YES];
         }
             break;
+        case 2: {
+            ELAnimalRootController *animalVC = [[ELAnimalRootController alloc] init];
+            [self.navigationController pushViewController:animalVC animated:YES];
+        }
+            break;
             
         default:
             break;
     }
 }
-- (UITableView *)tableView {
+
+- (ELSampleTableView *)tableView {
     if (!_tableView) {
-        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, kTopHeight, kScreenWidth, kScreenHeight - kTopHeight) style:UITableViewStylePlain];
-        if (@available(iOS 11.0, *)) {
-            _tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
-        } else {
-            self.automaticallyAdjustsScrollViewInsets = NO;
-        }
-        _tableView.delegate = self;
-        _tableView.dataSource = self;
-        _tableView.estimatedRowHeight = 0;
-        _tableView.estimatedSectionFooterHeight = 0;
-        _tableView.estimatedSectionHeaderHeight = 0;
-        _tableView.tableFooterView = [UIView new];
-        _tableView.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, 1)];
-        _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        _tableView = [[ELSampleTableView alloc] initWithFrame:CGRectMake(0, kTopHeight, kScreenWidth, kScreenHeight - kTopHeight) style:UITableViewStylePlain titleArray:self.titleArray];
+        __weak typeof(self) weakSelf = self;
+        _tableView.didSelectBlock = ^(NSInteger index) {
+            [weakSelf selectAtIndex:index];
+        };
     }
     return _tableView;
 }
