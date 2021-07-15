@@ -27,6 +27,7 @@
 		BD19A7EE22EEDD960096FC45 /* ELEncryptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BD19A7EC22EEDD960096FC45 /* ELEncryptViewController.m */; };
 		BD19A7EF22EEDD960096FC45 /* ELEncryptViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BD19A7ED22EEDD960096FC45 /* ELEncryptViewController.xib */; };
 		BDE1C81022F1309B00B77D39 /* ELPageChildController.m in Sources */ = {isa = PBXBuildFile; fileRef = BDE1C80F22F1309B00B77D39 /* ELPageChildController.m */; };
+		D2A1ECBD269FD3B4003B6FDE /* ELBasicTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2A1ECBC269FD3B4003B6FDE /* ELBasicTestController.m */; };
 		D2D6DFBC25063C8C00681BED /* ELMultGestureScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D6DFBB25063C8C00681BED /* ELMultGestureScrollView.m */; };
 		D2D6DFBF25063CDC00681BED /* ELPageRootController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D6DFBE25063CDC00681BED /* ELPageRootController.m */; };
 		D2E9C1EA25075B6100AE7737 /* ELSampleTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E9C1E925075B6100AE7737 /* ELSampleTableView.m */; };
@@ -78,6 +79,8 @@
 		BDE1C80E22F1309A00B77D39 /* ELPageChildController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELPageChildController.h; sourceTree = "<group>"; };
 		BDE1C80F22F1309B00B77D39 /* ELPageChildController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELPageChildController.m; sourceTree = "<group>"; };
 		C0E9501D969CCC865F13462D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		D2A1ECBB269FD3B4003B6FDE /* ELBasicTestController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELBasicTestController.h; sourceTree = "<group>"; };
+		D2A1ECBC269FD3B4003B6FDE /* ELBasicTestController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELBasicTestController.m; sourceTree = "<group>"; };
 		D2D6DFBA25063C8C00681BED /* ELMultGestureScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELMultGestureScrollView.h; sourceTree = "<group>"; };
 		D2D6DFBB25063C8C00681BED /* ELMultGestureScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELMultGestureScrollView.m; sourceTree = "<group>"; };
 		D2D6DFBD25063CDC00681BED /* ELPageRootController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ELPageRootController.h; sourceTree = "<group>"; };
@@ -164,6 +167,7 @@
 				6003F5A6195388D20070C39A /* ELViewController.m */,
 				D2E9C1E825075B6100AE7737 /* ELSampleTableView.h */,
 				D2E9C1E925075B6100AE7737 /* ELSampleTableView.m */,
+				D2A1ECBA269FD389003B6FDE /* BasicTest */,
 				D2E9C1EB25075DF900AE7737 /* Animal */,
 				BDDA2B2B22F02D90006051E3 /* PageScroll */,
 				BDDA2B2A22F02C30006051E3 /* Encrypt */,
@@ -249,6 +253,15 @@
 				D2D6DFBB25063C8C00681BED /* ELMultGestureScrollView.m */,
 			);
 			path = PageScroll;
+			sourceTree = "<group>";
+		};
+		D2A1ECBA269FD389003B6FDE /* BasicTest */ = {
+			isa = PBXGroup;
+			children = (
+				D2A1ECBB269FD3B4003B6FDE /* ELBasicTestController.h */,
+				D2A1ECBC269FD3B4003B6FDE /* ELBasicTestController.m */,
+			);
+			path = BasicTest;
 			sourceTree = "<group>";
 		};
 		D2E9C1EB25075DF900AE7737 /* Animal */ = {
@@ -430,6 +443,7 @@
 				D2E9C1EA25075B6100AE7737 /* ELSampleTableView.m in Sources */,
 				D2E9C1F12507844E00AE7737 /* ELBasicAnimalController.m in Sources */,
 				BDE1C81022F1309B00B77D39 /* ELPageChildController.m in Sources */,
+				D2A1ECBD269FD3B4003B6FDE /* ELBasicTestController.m in Sources */,
 				D2E9C1EE2507834100AE7737 /* ELAnimalRootController.m in Sources */,
 				D2D6DFBC25063C8C00681BED /* ELMultGestureScrollView.m in Sources */,
 				D2D6DFBF25063CDC00681BED /* ELPageRootController.m in Sources */,

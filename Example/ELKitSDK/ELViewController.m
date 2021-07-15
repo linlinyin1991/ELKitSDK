@@ -11,6 +11,7 @@
 #import "ELPageRootController.h"
 #import "ELSampleTableView.h"
 #import "ELAnimalRootController.h"
+#import "ELBasicTestController.h"
 
 @interface ELViewController ()
 
@@ -26,7 +27,7 @@
 {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    _titleArray = @[@"Encrypt", @"pageView", @"Animal"];
+    _titleArray = @[@"Encrypt", @"pageView", @"Animal", @"BasicTest"];
     [self.view addSubview:self.tableView];
 	// Do any additional setup after loading the view, typically from a nib.
 }
@@ -46,6 +47,11 @@
         case 2: {
             ELAnimalRootController *animalVC = [[ELAnimalRootController alloc] init];
             [self.navigationController pushViewController:animalVC animated:YES];
+        }
+            break;
+        case 3: {
+            ELBasicTestController *basicTestVC = [[ELBasicTestController alloc] init];
+            [self.navigationController pushViewController:basicTestVC animated:YES];
         }
             break;
             
